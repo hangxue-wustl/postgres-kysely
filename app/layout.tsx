@@ -2,8 +2,8 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 
 export const metadata = {
-  metadataBase: new URL('https://postgres-kysely.vercel.app'),
-  title: 'Vercel Postgres Demo with Kysely',
+  metadataBase: new URL('https://postgres-kysely-q1by-abcwtjfjg-hxue43s-projects.vercel.app/'),
+  title: 'CS 6440 project based on Vercel Postgres - Kysely template',
   description:
     'A simple Next.js app with Vercel Postgres as the database and Kysely as the ORM',
 }

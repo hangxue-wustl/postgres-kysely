@@ -29,7 +29,7 @@ export default function Home() {
           href="https://postgres-prisma.vercel.app/"
           className="font-medium underline underline-offset-4 hover:text-black transition-colors"
         >
-          Prisma
+          dashboard
         </Link>
         <Link
           href="https://postgres-starter.vercel.app/"

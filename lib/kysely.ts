@@ -6,9 +6,11 @@ interface UserTable {
   // using the `Generated` type. This way they are automatically
   // made optional in inserts and updates.
   id: Generated<number>
-  name: string
-  email: string
-  image: string
+  year: number
+  age: number
+  gender: string
+  country: string
+  mental_health: string
 
   // You can specify a different type for each operation (select, insert and
   // update) using the `ColumnType<SelectType, InsertType, UpdateType>`

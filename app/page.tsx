@@ -18,7 +18,7 @@ export default function Home() {
         <p>Take your mental health survey here!</p>
         <ExpandingArrow />
       </Link>
-      <h1 className="pt-4 pb-8 bg-gradient-to-br from-black via-[#171717] to-[#575757] bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl">
+      <h1 className="pt-4 pb-8 bg-gradient-to-br from-black via-[#171717] to-[#575757] bg-clip-text text-center text-2xl font-medium tracking-tight text-transparent md:text-7xl">
         Mental Health Trend in Tech Community <br /> 2019-2024
       </h1>
       <Suspense fallback={<TablePlaceholder />}>

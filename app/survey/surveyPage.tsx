@@ -125,7 +125,7 @@ const SurveyPage: React.FC = () => {
           {step.fields.map((field, fieldIndex) => (
             <div key={fieldIndex}>
               <label>{field.label}</label>
-              {field.type === 'select' ? (
+              {field.type === 'select' && field.options ? (
                 <select id={field.id}>
                   {field.options.map((option, optionIndex) => (
                     <option key={optionIndex} value={option.id}>

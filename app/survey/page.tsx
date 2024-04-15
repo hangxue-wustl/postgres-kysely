@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 
 interface SurveyPageProps {
   questions: string[]; // Array of survey questions
 }
 
 const SurveyPage: React.FC<SurveyPageProps> = ({ questions }) => {
-  const [selectedOptions, setSelectedOptions] = useState<string[]>(new Array(questions.length).fill(''));
+  const selectedOptionsRef = useRef<string[]>(new Array(questions.length).fill(''));
 
   const handleOptionSelect = (questionIndex: number, option: string) => {
-    const updatedOptions = [...selectedOptions];
-    updatedOptions[questionIndex] = option;
-    setSelectedOptions(updatedOptions);
+    selectedOptionsRef.current[questionIndex] = option;
+  };
+
+  const handleSubmit = () => {
+    console.log(selectedOptionsRef.current);
+    // Replace console.log with submission logic
   };
 
   return (
@@ -25,11 +28,10 @@ const SurveyPage: React.FC<SurveyPageProps> = ({ questions }) => {
             <button onClick={() => handleOptionSelect(index, 'Option 3')}>Option 3</button>
             {/* Add more options as needed */}
           </div>
-          <p>Selected Option: {selectedOptions[index]}</p>
+          <p>Selected Option: {selectedOptionsRef.current[index]}</p>
         </div>
       ))}
-      <button onClick={() => console.log(selectedOptions)}>Submit</button>
-      {/* Replace console.log with submission logic */}
+      <button onClick={handleSubmit}>Submit</button>
     </div>
   );
 };

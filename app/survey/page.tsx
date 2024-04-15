@@ -21,7 +21,6 @@ class Page extends React.Component {
           onChange={this.handleInputChange}
           ref={this.inputRef}
         />
-        <button onClick={() => this.inputRef.current?.focus()}>Focus Input</button>
       </div>
     );
   }

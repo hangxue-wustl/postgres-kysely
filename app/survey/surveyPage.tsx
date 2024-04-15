@@ -136,7 +136,7 @@ const SurveyPage: React.FC = () => {
               ) : field.type === 'text' ? (
                 <input type="text" id={field.id} />
               ) : null}
-              {field.reveals && (
+              {field.reveals && field.reveals.label && (
                 <div>
                   <label>{field.reveals.label}</label>
                   <input type="text" id={field.reveals.id} />

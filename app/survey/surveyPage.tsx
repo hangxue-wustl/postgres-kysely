@@ -1,173 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-interface SelectField {
-  type: 'select';
-  id: string;
-  label: string;
-  options: {
-    id: string;
-    label: string;
-    reveals?: {
-      id: string;
-      label: string;
-    };
-  }[];
+interface SurveyPageProps {
+  questions: string[]; // Array of survey questions
 }
 
-interface TextField {
-  type: 'text';
-  id: string;
-  label: string;
-}
+const SurveyPage: React.FC<SurveyPageProps> = ({ questions }) => {
+  const [selectedOptions, setSelectedOptions] = useState<string[]>(new Array(questions.length).fill(''));
 
-type Field = SelectField | TextField;
-
-const SurveyPage: React.FC = () => {
-  const userSurvey = {
-    surveyName: 'User Survey',
-    surveySlug: 'user-survey',
-    surveySteps: [
-      {
-        title: 'What is your favorite color?',
-        fields: [
-          {
-            type: 'select',
-            id: 'favorite-color',
-            label: 'Favorite color',
-            options: [
-              {
-                id: 'red',
-                label: "Red",
-              },
-              {
-                id: 'green',
-                label: "Green",
-              },
-              {
-                id: 'other',
-                label: "Other",
-                reveals: {
-                  id: 'which-color',
-                  label: 'Which color?'
-                }
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: 'Where have you visited?',
-        fields: [
-          {
-            type: 'select',
-            id: 'places-visited',
-            label: 'Places visited',
-            selectMultiple: true,
-            options: [
-              {
-                id: 'paris',
-                label: "Paris",
-              },
-              {
-                id: 'london',
-                label: "London",
-              },
-              {
-                id: 'kyoto',
-                label: "Kyoto",
-              },
-            ],
-          },
-          {
-            type: 'text',
-            id: 'favorite-place',
-            label: 'What is your favorite place?'
-          }
-        ],
-      },
-      {
-        title: 'Do aliens exist?',
-        fields: [
-          {
-            type: 'select',
-            id: 'do-aliens-exist',
-            label: 'Add your answer...',
-            as: 'dropdown',
-            options: [
-              {
-                id: 'yes',
-                label: "Yes",
-              },
-              {
-                id: 'no',
-                label: "No",
-                reveals: {
-                  id: 'why-not',
-                  label: 'Why not?'
-                }
-              },
-
-            ]
-          },
-          {
-            type: 'select',
-            as: 'combobox',
-            id: 'confidence-in-alien-existence',
-            label: 'Who is your favorite alien?',
-            options: [
-              {
-                id: 'et',
-                label: "ET",
-              },
-              {
-                id: 'stitch',
-                label: "Stitch",
-              },
-              {
-                id: 'toy-story-aliens',
-                label: "The aliens from Toy Story",
-              },
-              {
-                id: 'zoidberg',
-                label: "Zoidberg",
-              },
-            ],
-          }
-        ],
-      },
-    ],
+  const handleOptionSelect = (questionIndex: number, option: string) => {
+    const updatedOptions = [...selectedOptions];
+    updatedOptions[questionIndex] = option;
+    setSelectedOptions(updatedOptions);
   };
 
   return (
     <div>
-      <h1>{userSurvey.surveyName}</h1>
-      {userSurvey.surveySteps.map((step, stepIndex) => (
-        <div key={stepIndex}>
-          <h2>{step.title}</h2>
-          {step.fields.map((field, fieldIndex) => (
-            <div key={fieldIndex}>
-              <label>{field.label}</label>
-              {field.type === 'select' ? (
-                <select id={field.id}>
-                  {field.options.map((option, optionIndex) => (
-                    <option key={optionIndex} value={option.id}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
-              ) : field.type === 'text' ? (
-                <input type="text" id={field.id} />
-              ) : null}
-              {('reveals' in field && field.reveals) && (
-                <div>
-                  <label>{field.reveals.label}</label>
-                  <input type="text" id={field.reveals.id} />
-                </div>
-              )}
-            </div>
-          ))}
+      <h1>Survey</h1>
+      {questions.map((question, index) => (
+        <div key={index}>
+          <h3>{question}</h3>
+          <div>
+            <button onClick={() => handleOptionSelect(index, 'Option 1')}>Option 1</button>
+            <button onClick={() => handleOptionSelect(index, 'Option 2')}>Option 2</button>
+            <button onClick={() => handleOptionSelect(index, 'Option 3')}>Option 3</button>
+            {/* Add more options as needed */}
+          </div>
+          <p>Selected Option: {selectedOptions[index]}</p>
         </div>
       ))}
+      <button onClick={() => console.log(selectedOptions)}>Submit</button>
+      {/* Replace console.log with submission logic */}
     </div>
   );
 };

@@ -1,7 +1,6 @@
-import Container from '@/components/Container'; // Import Container component
-import Survey from '@/components/Survey'; // Import Survey component
+import React from 'react';
 
-const SurveyPage = () => {
+const SurveyPage: React.FC = () => {
   const userSurvey = {
     surveyName: 'User Survey',
     surveySlug: 'user-survey',
@@ -16,19 +15,19 @@ const SurveyPage = () => {
             options: [
               {
                 id: 'red',
-                label: 'Red',
+                label: "Red",
               },
               {
                 id: 'green',
-                label: 'Green',
+                label: "Green",
               },
               {
                 id: 'other',
-                label: 'Other',
+                label: "Other",
                 reveals: {
                   id: 'which-color',
-                  label: 'Which color?',
-                },
+                  label: 'Which color?'
+                }
               },
             ],
           },
@@ -45,23 +44,23 @@ const SurveyPage = () => {
             options: [
               {
                 id: 'paris',
-                label: 'Paris',
+                label: "Paris",
               },
               {
                 id: 'london',
-                label: 'London',
+                label: "London",
               },
               {
                 id: 'kyoto',
-                label: 'Kyoto',
+                label: "Kyoto",
               },
             ],
           },
           {
             type: 'text',
             id: 'favorite-place',
-            label: 'What is your favorite place?',
-          },
+            label: 'What is your favorite place?'
+          }
         ],
       },
       {
@@ -75,17 +74,18 @@ const SurveyPage = () => {
             options: [
               {
                 id: 'yes',
-                label: 'Yes',
+                label: "Yes",
               },
               {
                 id: 'no',
-                label: 'No',
+                label: "No",
                 reveals: {
                   id: 'why-not',
-                  label: 'Why not?',
-                },
+                  label: 'Why not?'
+                }
               },
-            ],
+
+            ]
           },
           {
             type: 'select',
@@ -95,31 +95,58 @@ const SurveyPage = () => {
             options: [
               {
                 id: 'et',
-                label: 'ET',
+                label: "ET",
               },
               {
                 id: 'stitch',
-                label: 'Stitch',
+                label: "Stitch",
               },
               {
                 id: 'toy-story-aliens',
-                label: 'The aliens from Toy Story',
+                label: "The aliens from Toy Story",
               },
               {
                 id: 'zoidberg',
-                label: 'Zoidberg',
+                label: "Zoidberg",
               },
             ],
-          },
+          }
         ],
       },
     ],
   };
 
   return (
-    <Container left>
-      <Survey surveyInfo={userSurvey} onSubmit={(value) => console.log(value)} />
-    </Container>
+    <div>
+      <h1>{userSurvey.surveyName}</h1>
+      {userSurvey.surveySteps.map((step, stepIndex) => (
+        <div key={stepIndex}>
+          <h2>{step.title}</h2>
+          {step.fields.map((field, fieldIndex) => (
+            <div key={fieldIndex}>
+              <label>{field.label}</label>
+              {field.type === 'select' ? (
+                <select id={field.id}>
+                  {field.options.map((option, optionIndex) => (
+                    <option key={optionIndex} value={option.id}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
+              ) : field.type === 'text' ? (
+                <input type="text" id={field.id} />
+              ) : null}
+              {field.reveals && (
+                <div>
+                  <label>{field.reveals.label}</label>
+                  <input type="text" id={field.reveals.id} />
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
   );
 };
 

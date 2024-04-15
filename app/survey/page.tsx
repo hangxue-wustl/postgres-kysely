@@ -1,28 +1,30 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 
-const Page: React.FC = () => {
-  const questions: string[] = ["What is your favorite color?"];
+class Page extends React.Component {
+  inputRef: React.RefObject<HTMLInputElement>;
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    //event.preventDefault();
-    //const answer = (document.getElementById('answer') as HTMLInputElement).value;
-    // Here you can handle the submission of the answer
-    //console.log('Submitted answer:', answer);
-    // You can send the answer to your backend, or perform any other action
+  constructor(props: {}) {
+    super(props);
+    this.inputRef = React.createRef();
+  }
+
+  handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const inputValue = event.target.value;
+    console.log(inputValue);
   };
 
-  return (
-    <div>
-      <h1>Simple Survey</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
-          {questions[0]} {/* Assuming questions is an array */}
-          <input type="text" id="answer" />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  );
-};
+  render() {
+    return (
+      <div>
+        <input
+          type="text"
+          onChange={this.handleInputChange}
+          ref={this.inputRef}
+        />
+        <button onClick={() => this.inputRef.current?.focus()}>Focus Input</button>
+      </div>
+    );
+  }
+}
 
 export default Page;

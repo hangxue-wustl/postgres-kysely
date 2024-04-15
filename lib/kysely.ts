@@ -6,8 +6,8 @@ interface UserTable {
   // using the `Generated` type. This way they are automatically
   // made optional in inserts and updates.
   id: Generated<number>
-  year: number
-  age: number
+  // year: number
+  // age: number
   gender: string
   country: string
   mental_health: string

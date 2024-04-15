@@ -5,8 +5,8 @@ export async function seed() {
     .createTable('users')
     .ifNotExists()
     .addColumn('id', 'serial', (cb) => cb.primaryKey())
-    .addColumn('year', 'integer', (cb) => cb.notNull())
-    .addColumn('age', 'integer', (cb) => cb.notNull())
+    // .addColumn('year', 'integer', (cb) => cb.notNull())
+    // .addColumn('age', 'integer', (cb) => cb.notNull())
     .addColumn('gender', 'varchar(255)', (cb) => cb.notNull())
     .addColumn('country', 'varchar(255)', (cb) => cb.notNull())
     .addColumn('mental_health', 'varchar(255)', (cb) => cb.notNull())
@@ -19,22 +19,22 @@ export async function seed() {
     .insertInto('users')
     .values([
       {
-        year: 2019,
-        age: 25,
+        // year: 2019,
+        // age: 25,
         gender: 'female',
         country: 'Russia', 
         mental_health: 'Yes',
       },
       {
-        year: 2020,
-        age: 26,
+        // year: 2020,
+        // age: 26,
         gender: 'male',
         country: 'Canada', 
         mental_health: 'Yes',
       },
       {
-        year: 2021,
-        age: 27,
+        // year: 2021,
+        // age: 27,
         gender: 'female',
         country: 'India	', 
         mental_health: 'No',

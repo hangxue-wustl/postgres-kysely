@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SurveyPage: React.FC = () => {
+const Page: React.FC = () => {
   const [answer, setAnswer] = React.useState<string>('');
 
   const questions: string[] = ["What is your favorite color?"];
@@ -30,4 +30,4 @@ const SurveyPage: React.FC = () => {
   );
 };
 
-export default SurveyPage;
+export default Page;

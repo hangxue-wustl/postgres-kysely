@@ -1,6 +1,7 @@
+'use client'
+
 import React, { useState } from 'react';
 
-// use client: This component is primarily used on the client-side
 const Page: React.FC = () => {
   // State to store the input value
   const [inputValue, setInputValue] = useState<string>('');

@@ -22,7 +22,7 @@ export async function seed() {
       {
         // year: 2019,
         // age: 25,
-        name: 'Guillermo Rauch',
+        name: 'Guillermo',
         email: 'rauchg@vercel.com',
         mental_health: 'No',
         image:
@@ -31,7 +31,7 @@ export async function seed() {
       {
         // year: 2020,
         // age: 26,
-        name: 'Lee Robinson',
+        name: 'Lee',
         email: 'lee@vercel.com',
         mental_health: 'Yes',
         image:
@@ -40,7 +40,7 @@ export async function seed() {
       {
         // year: 2021,
         // age: 27,
-        name: 'Steven Tey',
+        name: 'Steven',
         email: 'stey@vercel.com',
         mental_health: 'No',
         image:

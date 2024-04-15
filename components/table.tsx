@@ -5,20 +5,20 @@ import RefreshButton from './refresh-button'
 import { seed } from '@/lib/seed'
 
 export default async function Table() {
-  let users
+  let test
   let startTime = Date.now()
 
   try {
-    users = await db.selectFrom('users').selectAll().execute()
+    test = await db.selectFrom('test').selectAll().execute()
   } catch (e: any) {
-    if (e.message === `relation "users" does not exist`) {
+    if (e.message === `relation "test" does not exist`) {
       console.log(
         'Table does not exist, creating and seeding it with dummy data now...'
       )
       // Table is not created yet
       await seed()
       startTime = Date.now()
-      users = await db.selectFrom('users').selectAll().execute()
+      test = await db.selectFrom('test').selectAll().execute()
     } else {
       throw e
     }
@@ -32,13 +32,13 @@ export default async function Table() {
         <div className="space-y-1">
           <h2 className="text-xl font-semibold">Survey summary</h2>
           <p className="text-sm text-gray-500">
-            Fetched {users.length} surveys in {duration}ms
+            Fetched {test.length} surveys in {duration}ms
           </p>
         </div>
         <RefreshButton />
       </div>
       <div className="divide-y divide-gray-900/5">
-        {users.map((user) => (
+        {test.map((user) => (
           <div
           key={user.name}
           className="flex items-center justify-between py-3"

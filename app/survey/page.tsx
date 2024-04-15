@@ -1,29 +1,29 @@
-import React, { ChangeEvent } from 'react';
+import React, { useState } from 'react';
 
-class Page extends React.Component {
-  inputRef: React.RefObject<HTMLInputElement>;
+const Page: React.FC = () => {
+  // State to store the input value
+  const [inputValue, setInputValue] = useState<string>('');
 
-  constructor(props: {}) {
-    super(props);
-    this.inputRef = React.createRef();
-  }
-
-  handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const inputValue = event.target.value;
-    console.log(inputValue);
+  // Handler function to update the input value
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(event.target.value);
   };
 
-  render() {
-    return (
-      <div>
-        <input
-          type="text"
-          onChange={this.handleInputChange}
-          ref={this.inputRef}
-        />
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <h1>Question</h1>
+      <p>What is your favorite programming language?</p>
+      {/* Input box to capture the user's response */}
+      <input 
+        type="text" 
+        value={inputValue} 
+        onChange={handleInputChange} 
+        placeholder="Type your answer here..." 
+      />
+      {/* Display the user's input */}
+      <p>Your answer: {inputValue}</p>
+    </div>
+  );
+};
 
 export default Page;

@@ -1,9 +1,8 @@
 import React from 'react';
 
 const Page: React.FC = () => {
-  const [answer, setAnswer] = React.useState<string>('');
-
   const questions: string[] = ["What is your favorite color?"];
+  const [answer, setAnswer] = React.useState<string>('');
 
   const handleAnswerChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setAnswer(event.target.value);

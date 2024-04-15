@@ -2,14 +2,10 @@ import React from 'react';
 
 const Page: React.FC = () => {
   const questions: string[] = ["What is your favorite color?"];
-  const [answer, setAnswer] = React.useState<string>('');
-
-  const handleAnswerChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setAnswer(event.target.value);
-  };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const answer = (document.getElementById('answer') as HTMLInputElement).value;
     // Here you can handle the submission of the answer
     console.log('Submitted answer:', answer);
     // You can send the answer to your backend, or perform any other action
@@ -21,7 +17,7 @@ const Page: React.FC = () => {
       <form onSubmit={handleSubmit}>
         <label>
           {questions[0]} {/* Assuming questions is an array */}
-          <input type="text" value={answer} onChange={handleAnswerChange} />
+          <input type="text" id="answer" />
         </label>
         <button type="submit">Submit</button>
       </form>

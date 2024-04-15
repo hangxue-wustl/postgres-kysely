@@ -46,7 +46,7 @@ export default async function Table() {
           <div className="flex items-center space-x-4">
             <Image
               src={user.image}
-              alt={user.name}
+              alt={user.country}
               width={48}
               height={48}
               className="rounded-full ring-1 ring-gray-900/5"

@@ -4,7 +4,7 @@ interface SurveyPageProps {
   questions: string[]; // Array of survey questions
 }
 
-const SurveyPage: React.FC<SurveyPageProps> = ({ questions }) => {
+const Page: React.FC<SurveyPageProps> = ({ questions }) => {
   const selectedOptions: string[] = new Array(questions.length).fill('');
 
   const handleOptionSelect = (questionIndex: number, option: string) => {
@@ -34,4 +34,4 @@ const SurveyPage: React.FC<SurveyPageProps> = ({ questions }) => {
   );
 };
 
-export default SurveyPage;
+export default Page;

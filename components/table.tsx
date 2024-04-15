@@ -40,7 +40,7 @@ export default async function Table() {
       <div className="divide-y divide-gray-900/5">
         {users.map((user) => (
           <div
-            key={user.id}
+            key={user.country}
             className="flex items-center justify-between py-3"
           >
             <div className="flex items-center space-x-4">

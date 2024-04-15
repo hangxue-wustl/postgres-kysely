@@ -19,12 +19,23 @@ export default function Page() {
       <p>
         Two bias metrics, Statistical Parity Difference (SPD) and Disparate Impact (DI), are employed here.
       </p>
+      <br />
       <p>
-        Statistical Parity Difference (SPD) quantifies the variance in favorable outcomes between the majority and protected classes. A fair assessment is indicated by a value of 0.
+        Statistical Parity Difference (SPD) quantifies the variance in favorable outcomes between the majority and protected classes.
+      </p>
+      <p>
+        A fair assessment of SPD is indicated by a value of 0.
       </p>
       <br />
       <p>
-        Disparate Impact (DI) evaluates the proportion of individuals from two distinct groups— a majority and a minority— who receive favorable outcomes. A fair assessment is indicated by a value of 1.
+        Disparate Impact (DI) evaluates the proportion of individuals from two distinct groups— a majority and a minority— who receive favorable outcomes.
+      </p>
+      <p>
+        A fair assessment of DI is indicated by a value of 0.
+      </p>
+      <br />
+      <p>
+        Click the category (Age, Gender and Nationality) in the side bar for bias analysis.
       </p>
     </div>
 )

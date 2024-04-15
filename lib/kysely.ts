@@ -11,6 +11,7 @@ interface UserTable {
   gender: string
   country: string
   mental_health: string
+  image: string
 
   // You can specify a different type for each operation (select, insert and
   // update) using the `ColumnType<SelectType, InsertType, UpdateType>`

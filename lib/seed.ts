@@ -8,8 +8,8 @@ export async function seed() {
     // .addColumn('year', 'integer', (cb) => cb.notNull())
     // .addColumn('age', 'integer', (cb) => cb.notNull())
     .addColumn('image', 'varchar(255)')
-    .addColumn('gender', 'varchar(255)', (cb) => cb.notNull())
-    .addColumn('country', 'varchar(255)', (cb) => cb.notNull())
+    .addColumn('name', 'varchar(255)', (cb) => cb.notNull())
+    .addColumn('email', 'varchar(255)', (cb) => cb.notNull())
     .addColumn('mental_health', 'varchar(255)', (cb) => cb.notNull())
     .addColumn('createdAt', sql`timestamp with time zone`, (cb) =>
       cb.defaultTo(sql`current_timestamp`)
@@ -22,17 +22,17 @@ export async function seed() {
       {
         // year: 2019,
         // age: 25,
-        gender: 'female',
-        country: 'Russia', 
-        mental_health: 'Yes',
+        name: 'Guillermo Rauch',
+        email: 'rauchg@vercel.com',
+        mental_health: 'No',
         image:
           'https://images.ctfassets.net/e5382hct74si/2P1iOve0LZJRZWUzfXpi9r/9d4d27765764fb1ad7379d7cbe5f1043/ucxb4lHy_400x400.jpg',
       },
       {
         // year: 2020,
         // age: 26,
-        gender: 'male',
-        country: 'Canada', 
+        name: 'Lee Robinson',
+        email: 'lee@vercel.com',
         mental_health: 'Yes',
         image:
           'https://images.ctfassets.net/e5382hct74si/4BtM41PDNrx4z1ml643tdc/7aa88bdde8b5b7809174ea5b764c80fa/adWRdqQ6_400x400.jpg',
@@ -40,8 +40,8 @@ export async function seed() {
       {
         // year: 2021,
         // age: 27,
-        gender: 'female',
-        country: 'India	', 
+        name: 'Steven Tey',
+        email: 'stey@vercel.com',
         mental_health: 'No',
         image:
           'https://images.ctfassets.net/e5382hct74si/4QEuVLNyZUg5X6X4cW4pVH/eb7cd219e21b29ae976277871cd5ca4b/profile.jpg',

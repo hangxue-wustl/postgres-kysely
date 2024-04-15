@@ -8,8 +8,8 @@ interface UserTable {
   id: Generated<number>
   // year: number
   // age: number
-  gender: string
-  country: string
+  name: string
+  email: string
   mental_health: string
   image: string
 

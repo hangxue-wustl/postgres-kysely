@@ -5,20 +5,20 @@ import RefreshButton from './refresh-button'
 import { seed } from '@/lib/seed'
 
 export default async function Table() {
-  let test
+  let survey1
   let startTime = Date.now()
 
   try {
-    test = await db.selectFrom('test').selectAll().execute()
+    survey1 = await db.selectFrom('survey1').selectAll().execute()
   } catch (e: any) {
-    if (e.message === `relation "test" does not exist`) {
+    if (e.message === `relation "survey1" does not exist`) {
       console.log(
         'Table does not exist, creating and seeding it with dummy data now...'
       )
       // Table is not created yet
       await seed()
       startTime = Date.now()
-      test = await db.selectFrom('test').selectAll().execute()
+      survey1 = await db.selectFrom('survey1').selectAll().execute()
     } else {
       throw e
     }
@@ -32,28 +32,25 @@ export default async function Table() {
         <div className="space-y-1">
           <h2 className="text-xl font-semibold">Survey summary</h2>
           <p className="text-sm text-gray-500">
-            Fetched {test.length} surveys in {duration}ms
+            Fetched {survey1.length} surveys in {duration}ms
           </p>
         </div>
         <RefreshButton />
       </div>
       <div className="divide-y divide-gray-900/5">
-        {test.map((user) => (
+        {survey1.map((user) => (
           <div
-          key={user.name}
+          key={user.id}
           className="flex items-center justify-between py-3"
         >
           <div className="flex items-center space-x-4">
-            <Image
-              src={user.image}
-              alt={user.name}
-              width={48}
-              height={48}
-              className="rounded-full ring-1 ring-gray-900/5"
-            />
+            
             <div className="space-y-1">
-              <p className="font-medium leading-none">{user.name}</p>
-              <p className="text-sm text-gray-500">{user.email}</p>
+              <p className="font-medium leading-none">{user.year}</p>
+              <p className="text-sm text-gray-500">{user.age}</p>
+              <p className="text-sm text-gray-500">{user.gender}</p>
+              <p className="text-sm text-gray-500">{user.country}</p>
+              <p className="text-sm text-gray-500">{user.mental_health}</p>
             </div>
           </div>
           <p className="text-sm text-gray-500">{timeAgo(user.createdAt)}</p>

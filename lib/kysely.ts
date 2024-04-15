@@ -6,12 +6,11 @@ interface UserTable {
   // using the `Generated` type. This way they are automatically
   // made optional in inserts and updates.
   id: Generated<number>
-  // year: number
-  // age: number
-  name: string
-  email: string
+  year: number
+  age: number
+  gender: string
+  country: string
   mental_health: string
-  image: string
 
   // You can specify a different type for each operation (select, insert and
   // update) using the `ColumnType<SelectType, InsertType, UpdateType>`
@@ -23,7 +22,7 @@ interface UserTable {
 
 // Keys of this interface are table names.
 export interface Database {
-  test: UserTable
+  survey1: UserTable
 }
 
 export const db = createKysely<Database>()

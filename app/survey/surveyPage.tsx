@@ -1,5 +1,27 @@
 import React from 'react';
 
+interface SelectField {
+  type: 'select';
+  id: string;
+  label: string;
+  options: {
+    id: string;
+    label: string;
+    reveals?: {
+      id: string;
+      label: string;
+    };
+  }[];
+}
+
+interface TextField {
+  type: 'text';
+  id: string;
+  label: string;
+}
+
+type Field = SelectField | TextField;
+
 const SurveyPage: React.FC = () => {
   const userSurvey = {
     surveyName: 'User Survey',
@@ -125,7 +147,7 @@ const SurveyPage: React.FC = () => {
           {step.fields.map((field, fieldIndex) => (
             <div key={fieldIndex}>
               <label>{field.label}</label>
-              {field.type === 'select' && field.options ? (
+              {field.type === 'select' ? (
                 <select id={field.id}>
                   {field.options.map((option, optionIndex) => (
                     <option key={optionIndex} value={option.id}>
@@ -136,7 +158,7 @@ const SurveyPage: React.FC = () => {
               ) : field.type === 'text' ? (
                 <input type="text" id={field.id} />
               ) : null}
-              {field.reveals && field.reveals.label && (
+              {('reveals' in field && field.reveals) && (
                 <div>
                   <label>{field.reveals.label}</label>
                   <input type="text" id={field.reveals.id} />

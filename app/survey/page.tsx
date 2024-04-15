@@ -1,37 +1,33 @@
 import React from 'react';
 
-interface SurveyPageProps {
-  questions: string[]; // Array of survey questions
-}
+const SurveyPage: React.FC = () => {
+  const [answer, setAnswer] = React.useState<string>('');
 
-const Page: React.FC<SurveyPageProps> = ({ questions }) => {
-  const selectedOptions: string[] = new Array(questions.length).fill('');
+  const questions: string[] = ["What is your favorite color?"];
 
-  const handleOptionSelect = (questionIndex: number, option: string) => {
-    selectedOptions[questionIndex] = option;
-    console.log(selectedOptions); // Log selected options
-    // Replace console.log with submission logic
+  const handleAnswerChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setAnswer(event.target.value);
+  };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // Here you can handle the submission of the answer
+    console.log('Submitted answer:', answer);
+    // You can send the answer to your backend, or perform any other action
   };
 
   return (
     <div>
-      <h1>Survey</h1>
-      {questions.map((question, index) => (
-        <div key={index}>
-          <h3>{question}</h3>
-          <div>
-            <button onClick={() => handleOptionSelect(index, 'Option 1')}>Option 1</button>
-            <button onClick={() => handleOptionSelect(index, 'Option 2')}>Option 2</button>
-            <button onClick={() => handleOptionSelect(index, 'Option 3')}>Option 3</button>
-            {/* Add more options as needed */}
-          </div>
-          <p>Selected Option: {selectedOptions[index]}</p>
-        </div>
-      ))}
-      <button onClick={() => console.log(selectedOptions)}>Submit</button>
-      {/* Replace console.log with submission logic */}
+      <h1>Simple Survey</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          {questions[0]} {/* Assuming questions is an array */}
+          <input type="text" value={answer} onChange={handleAnswerChange} />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   );
 };
 
-export default Page;
+export default SurveyPage;

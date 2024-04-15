@@ -25,7 +25,6 @@ const Page: React.FC = () => {
       {/* Display the user's input */}
       <p>Your answer: {inputValue}</p>
     </div>
-    
     <div>
       <h1>Question 2</h1>
       <p>What is your gender?</p>
@@ -39,7 +38,6 @@ const Page: React.FC = () => {
       {/* Display the user's input */}
       <p>Your answer: {inputValue}</p>
     </div>
-
     <div>
       <h1>Question 3</h1>
       <p>Which country is your home country?</p>
@@ -53,7 +51,6 @@ const Page: React.FC = () => {
       {/* Display the user's input */}
       <p>Your answer: {inputValue}</p>
     </div>
-
     <div>
       <h1>Question 4</h1>
       <p>Have you experienced mental health issues?</p>

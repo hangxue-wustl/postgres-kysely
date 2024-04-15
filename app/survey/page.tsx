@@ -4,10 +4,10 @@ const Page: React.FC = () => {
   const questions: string[] = ["What is your favorite color?"];
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const answer = (document.getElementById('answer') as HTMLInputElement).value;
+    //event.preventDefault();
+    //const answer = (document.getElementById('answer') as HTMLInputElement).value;
     // Here you can handle the submission of the answer
-    console.log('Submitted answer:', answer);
+    //console.log('Submitted answer:', answer);
     // You can send the answer to your backend, or perform any other action
   };
 

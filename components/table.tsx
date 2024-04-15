@@ -30,9 +30,9 @@ export default async function Table() {
     <div className="bg-white/30 p-12 shadow-xl ring-1 ring-gray-900/5 rounded-lg backdrop-blur-lg max-w-xl mx-auto w-full">
       <div className="flex justify-between items-center mb-4">
         <div className="space-y-1">
-          <h2 className="text-xl font-semibold">Summary</h2>
+          <h2 className="text-xl font-semibold">Survey summary</h2>
           <p className="text-sm text-gray-500">
-            Fetched {users.length} survey results in {duration}ms
+            Fetched {users.length} surveys in {duration}ms
           </p>
         </div>
         <RefreshButton />
@@ -44,13 +44,9 @@ export default async function Table() {
             className="flex items-center justify-between py-3"
           >
             <div className="flex items-center space-x-4">
-      
               <div className="space-y-1">
-                <p className="font-medium leading-none">{user.year}</p>
-                <p className="text-sm text-gray-500">{user.age}</p>
-                <p className="text-sm text-gray-500">{user.gender}</p>
+                <p className="font-medium leading-none">{user.gender}</p>
                 <p className="text-sm text-gray-500">{user.country}</p>
-                <p className="text-sm text-gray-500">{user.mental_health}</p>
               </div>
             </div>
             <p className="text-sm text-gray-500">{timeAgo(user.createdAt)}</p>

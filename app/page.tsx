@@ -4,7 +4,7 @@ import { Suspense } from 'react'
 import Table from '@/components/table'
 import TablePlaceholder from '@/components/table-placeholder'
 import ExpandingArrow from '@/components/expanding-arrow'
-import RevenueChart from '@/app/ui/dashboard/survey-chart';
+import RevenueChart from '@/components/survey-chart';
 import {
   RevenueChartSkeleton,
 } from '@/app/ui/skeletons';

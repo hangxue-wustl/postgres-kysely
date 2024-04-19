@@ -1,6 +1,6 @@
 import { generateYAxis } from '@/app/lib/utils';
 import { lusitana } from '@/app/ui/fonts';
-import { fetchsurveyResult } from '@/app/lib/data';
+import { fetchSurveyResult } from '@/app/lib/data';
 
 // This component is representational only.
 // For data visualization UI, check out:
@@ -9,7 +9,7 @@ import { fetchsurveyResult } from '@/app/lib/data';
 // https://airbnb.io/visx/
 
 export default async function RevenueChart() {
-  const surveyResult = await fetchsurveyResult();
+  const surveyResult = await fetchSurveyResult();
 
   const chartHeight = 350;
   const { yAxisLabels, topLabel } = generateYAxis(surveyResult);

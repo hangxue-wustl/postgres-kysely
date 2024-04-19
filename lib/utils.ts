@@ -1,4 +1,6 @@
-import ms from 'ms'
+import ms from 'ms';
+import { Survey } from './definitions';
+
 
 export const timeAgo = (timestamp: Date, timeOnly?: boolean): string => {
   if (!timestamp) return 'never'

@@ -1,6 +1,6 @@
-import { generateYAxis } from '@/lib/utils';
+// import { generateYAxis } from '@/lib/utils';
 import { lusitana } from '@/app/ui/fonts';
-import { fetchSurveyResult } from '@/lib/data';
+// import { fetchSurveyResult } from '@/lib/data';
 
 // This component is representational only.
 // For data visualization UI, check out:

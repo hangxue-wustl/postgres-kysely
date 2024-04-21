@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Suspense } from 'react'
 import Table from '@/components/table'
 import TablePlaceholder from '@/components/table-placeholder'
+import SurveyChart from '@/components/survey-chart';
+
 import ExpandingArrow from '@/components/expanding-arrow'
 
 export const preferredRegion = 'home'
@@ -22,7 +24,7 @@ export default function Home() {
         Mental Health Trend in Tech Community <br /> 2019-2024
       </h1>
       <Suspense fallback={<TablePlaceholder />}>
-        <Table />
+        <SurveyChart />
       </Suspense>
       <div className="flex justify-center space-x-5 pt-10 mt-10 border-t border-gray-300 w-full max-w-xl text-gray-600">
         <Link

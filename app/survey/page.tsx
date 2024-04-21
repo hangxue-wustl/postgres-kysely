@@ -36,14 +36,14 @@ const Page: React.FC = () => {
       mentalHealthIssues,
     };
     writeSurveyResults(data);
-
   };
 
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', fontSize: '18px' }}>
-      <h1 style={{ fontSize: '32px', textAlign: 'center' }}>Use Client</h1>
+      <h1 style={{ fontSize: '32px', textAlign: 'center' }}>Survey</h1>
 
-      <div>
+      {/* Question 1 */}
+      <div style={{ backgroundColor: '#f0f0f0', padding: '20px', borderRadius: '12px', marginBottom: '20px' }}>
         <h2 style={{ fontSize: '24px' }}>Question 1</h2>
         <p style={{ fontSize: '20px' }}>What is your age?</p>
         <input 
@@ -56,7 +56,8 @@ const Page: React.FC = () => {
         <p style={{ fontSize: '20px' }}>Your answer: {age}</p>
       </div>
 
-      <div>
+      {/* Question 2 */}
+      <div style={{ backgroundColor: '#f0f0f0', padding: '20px', borderRadius: '12px', marginBottom: '20px' }}>
         <h2 style={{ fontSize: '24px' }}>Question 2</h2>
         <p style={{ fontSize: '20px' }}>What is your gender?</p>
         <input 
@@ -69,7 +70,8 @@ const Page: React.FC = () => {
         <p style={{ fontSize: '20px' }}>Your answer: {gender}</p>
       </div>
 
-      <div>
+      {/* Question 3 */}
+      <div style={{ backgroundColor: '#f0f0f0', padding: '20px', borderRadius: '12px', marginBottom: '20px' }}>
         <h2 style={{ fontSize: '24px' }}>Question 3</h2>
         <p style={{ fontSize: '20px' }}>What is your country of origin?</p>
         <input 
@@ -82,7 +84,8 @@ const Page: React.FC = () => {
         <p style={{ fontSize: '20px' }}>Your answer: {country}</p>
       </div>
 
-      <div>
+      {/* Question 4 */}
+      <div style={{ backgroundColor: '#f0f0f0', padding: '20px', borderRadius: '12px', marginBottom: '20px' }}>
         <h2 style={{ fontSize: '24px' }}>Question 4</h2>
         <p style={{ fontSize: '20px' }}>Have you ever experienced mental health issues?</p>
         <label style={{ fontSize: '20px', marginBottom: '10px' }}>

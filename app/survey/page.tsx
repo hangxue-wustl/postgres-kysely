@@ -1,3 +1,5 @@
+'use client'
+
 import { writeSurveyResults } from '@/lib/data';
 import React, { useState } from 'react';
 

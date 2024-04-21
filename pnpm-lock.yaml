@@ -63,9 +63,9 @@ dependencies:
   typescript:
     specifier: 5.2.2
     version: 5.2.2
-  react-chartjs-2: # Added dependency
-    specifier: ^2.9.0
-    version: 2.9.0
+  # react-chartjs-2: # Added dependency
+  #   specifier: ^2.9.0
+  #   version: 2.9.0
   
 
 packages:
@@ -2218,12 +2218,12 @@ packages:
       loose-envify: 1.4.0
     dev: false
   
-  /react-chartjs-2@2.9.0:
-    resolution: {integrity: sha512-IYwqUUnQRAJ9SNA978vxulHJTcUFTJk2LDVfbAyk0TnJFZZG7+6U/2flsE4MCw6WCbBjTTypy8T82Ch7XrPtRw==}
-    dependencies:
-      lodash: ^4.17.4
-      prop-types: ^15.5.8
-    dev: false
+  # /react-chartjs-2@2.9.0:
+  #   resolution: {integrity: sha512-IYwqUUnQRAJ9SNA978vxulHJTcUFTJk2LDVfbAyk0TnJFZZG7+6U/2flsE4MCw6WCbBjTTypy8T82Ch7XrPtRw==}
+  #   dependencies:
+  #     lodash: ^4.17.4
+  #     prop-types: ^15.5.8
+  #   dev: false
 
   /read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}

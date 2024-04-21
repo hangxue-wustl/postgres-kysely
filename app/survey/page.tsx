@@ -104,19 +104,14 @@ const Page: React.FC = () => {
         textAlign: 'center', 
         textDecoration: 'none', 
         display: 'inline-block', 
-        fontSize: '24px', 
+        fontSize: '16px', 
         margin: '4px 2px', 
         cursor: 'pointer', 
         borderRadius: '12px',
-        transition: 'background-color 0.3s ease',
-        }}
-        // Add hover style
-        onMouseOver={(e) => e.target.style.backgroundColor = '#45a049'}
-        // Reset to original color when mouse leaves button
-        onMouseOut={(e) => e.target.style.backgroundColor = '#4CAF50'}
-      >
-        Submit
+        }}>
+          Submit
       </button>
+
     </div>
   );
 };

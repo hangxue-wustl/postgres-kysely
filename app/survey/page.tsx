@@ -93,7 +93,21 @@ const Page: React.FC = () => {
         <p>Your answer: {mentalHealthIssues ? 'Yes' : 'No'}</p>
       </div>
 
-      <button onClick={handleSubmit}>Submit</button>
+      <button onClick={handleSubmit} style={{ 
+        backgroundColor: '#4CAF50', 
+        border: 'none', 
+        color: 'white', 
+        padding: '15px 32px', 
+        textAlign: 'center', 
+        textDecoration: 'none', 
+        display: 'inline-block', 
+        fontSize: '16px', 
+        margin: '4px 2px', 
+        cursor: 'pointer', 
+        borderRadius: '12px',
+        }}>
+          Submit
+      </button>
     </div>
   );
 };

@@ -36,7 +36,7 @@ export default async function GenderChart() {
                 <div
                   className="w-full rounded-md bg-blue-300"
                   style={{
-                    height: `${(chartHeight / topLabel) * gender.SDP}px`,
+                    height: `${(chartHeight / topLabel) * gender.bias}px`,
                   }}
                 ></div>
                 {/* x-axis */}

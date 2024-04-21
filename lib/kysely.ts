@@ -25,7 +25,7 @@ interface UserTable {
   // using the `Generated` type. This way they are automatically
   // made optional in inserts and updates.
   metrics: string
-  SDP: number
+  bias: number
 
   // You can specify a different type for each operation (select, insert and
   // update) using the `ColumnType<SelectType, InsertType, UpdateType>`

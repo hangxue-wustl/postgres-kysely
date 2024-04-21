@@ -3,6 +3,10 @@ export type surveyResults = {
     age: number;
   };
 
+export type genderbias = {
+  metrics: string;
+  SDP: number;
+};
 export type surveyUser = {
     id: string;
     year: number;

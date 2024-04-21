@@ -2218,7 +2218,7 @@ packages:
       loose-envify: 1.4.0
     dev: false
   
-  /react-chartjs-2@^2.9.0:
+  /react-chartjs-2@2.9.0:
     resolution: {integrity: sha512-IYwqUUnQRAJ9SNA978vxulHJTcUFTJk2LDVfbAyk0TnJFZZG7+6U/2flsE4MCw6WCbBjTTypy8T82Ch7XrPtRw==}
     dependencies:
       lodash: ^4.17.4

@@ -1,10 +1,31 @@
 import { CalendarIcon } from '@heroicons/react/24/outline';
+import { db } from '@/lib/kysely'
+
 import { lusitana } from '@/app/ui/fonts';
 import { fetchGenderResults } from '@/lib/data';
+import { seed } from '@/lib/seed'
 
 export default async function GenderChart() {
+    let genderbias
+    let startTime = Date.now()
+
+    try {
+        genderbias = await db.selectFrom('genderbias').selectAll().execute()
+      } catch (e: any) {
+        if (e.message === `relation "genderbias" does not exist`) {
+          console.log(
+            'Table does not exist, creating and seeding it with dummy data now...'
+          )
+          // Table is not created yet
+          await seed()
+          startTime = Date.now()
+          genderbias = await db.selectFrom('genderbias').selectAll().execute()
+        } else {
+          throw e
+        }
+      }
+
     const genderResults = await fetchGenderResults();
-  
     const chartHeight = 350;
     const yAxisLabels = [-1, -0.75, -5, -0.25, 0, 0.25, 0.5, 0.75, 1];
     const topLabel = 1;

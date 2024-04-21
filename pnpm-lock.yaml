@@ -65,7 +65,7 @@ dependencies:
     version: 5.2.2
   react-chartjs-2: # Added dependency
     specifier: ^2.9.0
-    version: 5.2.0
+    version: 2.9.0
   
 
 packages:

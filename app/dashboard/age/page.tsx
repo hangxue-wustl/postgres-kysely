@@ -3,7 +3,7 @@ import Link from 'next/link'
 import TablePlaceholder from '@/components/table-placeholder'
 import ExpandingArrow from '@/components/expanding-arrow'
 import { Suspense } from 'react'
-import SurveyChart from '@/components/survey-chart';
+import GenderChart from '@/components/gender-chart';
 
 export const preferredRegion = 'home'
 export const dynamic = 'force-dynamic'
@@ -27,7 +27,7 @@ export default function Page() {
         This negative value indicates a small bias against the unprivileged (female). Females suffer more often from mental health disorder. 
       </p>
       <Suspense fallback={<TablePlaceholder />}>
-        <SurveyChart />
+        <GenderChart />
       </Suspense>
     </div>
 )

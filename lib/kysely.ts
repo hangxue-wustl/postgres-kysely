@@ -20,9 +20,16 @@ interface UserTable {
   createdAt: ColumnType<Date, string | undefined, never>
 }
 
+interface SurveyResultsTable {
+  year: number
+  pyes: number
+  // Add other columns as needed
+}
+
 // Keys of this interface are table names.
 export interface Database {
   survey1: UserTable
+  surveyresults: SurveyResultsTable
 }
 
 export const db = createKysely<Database>()

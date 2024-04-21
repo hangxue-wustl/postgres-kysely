@@ -1,5 +1,6 @@
 'use client'
 
+import { writeSurveyResults } from '@/lib/data';
 import React, { useState } from 'react';
 
 const Page: React.FC = () => {
@@ -24,6 +25,18 @@ const Page: React.FC = () => {
 
   const handleMentalHealthChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setMentalHealthIssues(event.target.checked);
+  };
+
+  const handleSubmit = async () => {
+    // Construct the data object with survey responses
+    const data = {
+      age,
+      gender,
+      country,
+      mentalHealthIssues,
+    };
+    writeSurveyResults(data);
+
   };
 
   return (
@@ -79,6 +92,8 @@ const Page: React.FC = () => {
         </label>
         <p>Your answer: {mentalHealthIssues ? 'Yes' : 'No'}</p>
       </div>
+
+      <button onClick={handleSubmit}>Submit</button>
     </div>
   );
 };

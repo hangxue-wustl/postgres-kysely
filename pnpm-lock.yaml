@@ -2217,6 +2217,11 @@ packages:
     dependencies:
       loose-envify: 1.4.0
     dev: false
+  
+  /react-chartjs-2@5.2.0:
+    engines:
+      node: ">=0.10.0"
+    dev: false
 
   /read-cache@1.0.0:
     resolution: {integrity: sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==}

@@ -49,7 +49,7 @@ export async function seed() {
     .createTable('surveyresults')
     .ifNotExists()
     .addColumn('year', 'integer', (cb) => cb.notNull())
-    .addColumn('pyes', 'float', (cb) => cb.notNull())
+    .addColumn('pyes', 'real', (cb) => cb.notNull())
     // Add other columns as needed
     .execute();
   console.log(`Created "surveyresults" table`);

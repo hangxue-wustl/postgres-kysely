@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Suspense } from 'react'
-import Table from '@/components/table'
-import TablePlaceholder from '@/components/table-placeholder'
+// import Table from '@/components/table'
+// import TablePlaceholder from '@/components/table-placeholder'
 import ExpandingArrow from '@/components/expanding-arrow'
-import RevenueChart from '@/components/survey-chart';
+// import RevenueChart from '@/components/survey-chart';
+import BarChart from '@/components/BarChart';
 import {
-  RevenueChartSkeleton,
+  RevenueChartSkeleton, 
 } from '@/app/ui/skeletons';
 
 export const preferredRegion = 'home'
@@ -26,7 +27,7 @@ export default function Home() {
         Mental Health Trend in Tech Community <br /> 2019-2024
       </h1>
       <Suspense fallback={<RevenueChartSkeleton />}>
-        <RevenueChart />
+        <BarChart />
       </Suspense>
       <div className="flex justify-center space-x-5 pt-10 mt-10 border-t border-gray-300 w-full max-w-xl text-gray-600">
         <Link

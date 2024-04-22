@@ -121,8 +121,6 @@ export async function seed() {
     .addColumn('mentalHealthIssue', 'boolean', (cb) => cb.notNull())
     .execute();
 
-
-
   return {
     createTable,
     addUsers,

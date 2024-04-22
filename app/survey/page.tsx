@@ -36,6 +36,7 @@ const Page: React.FC = () => {
       country,
       mentalHealthIssues,
     };
+    let surveyData
     try {
       await seed()
     } catch (e: any) {
@@ -45,6 +46,7 @@ const Page: React.FC = () => {
         )
         // Table is not created yet
         await seed()
+        surveyData = await db
       } else {
         throw e
       }
@@ -113,28 +115,28 @@ const Page: React.FC = () => {
       </div>
 
       <button 
-        onClick={handleSubmit} 
-        style={{ 
-          backgroundColor: '#4CAF50', 
-          border: 'none', 
-          color: 'white', 
-          padding: '15px 32px', 
-          textAlign: 'center', 
-          textDecoration: 'none', 
-          display: 'inline-block', 
-          fontSize: '16px', 
-          margin: '4px 2px', 
-          cursor: 'pointer', 
-          borderRadius: '12px',
-          transition: 'background-color 0.3s ease', // Smooth transition for color change
-        }}
-        // Add hover style
-        onMouseOver={(e) => (e.target as HTMLElement).style.backgroundColor = '#45a049'}
-        // Reset to original color when mouse leaves button
-        onMouseOut={(e) => (e.target as HTMLElement).style.backgroundColor = '#4CAF50'}
-      >
-        Submit
-      </button>
+      onClick={handleSubmit} 
+      style={{ 
+        backgroundColor: '#4CAF50', 
+        border: 'none', 
+        color: 'white', 
+        padding: '15px 32px', 
+        textAlign: 'center', 
+        textDecoration: 'none', 
+        display: 'inline-block', 
+        fontSize: '16px', 
+        margin: '4px 2px', 
+        cursor: 'pointer', 
+        borderRadius: '12px',
+        transition: 'background-color 0.3s ease', // Smooth transition for color change
+      }}
+      // Add hover style
+      onMouseOver={(e) => (e.target as HTMLElement).style.backgroundColor = '#45a049'}
+      // Reset to original color when mouse leaves button
+      onMouseOut={(e) => (e.target as HTMLElement).style.backgroundColor = '#4CAF50'}
+    >
+      Submit
+    </button>
 
 
 

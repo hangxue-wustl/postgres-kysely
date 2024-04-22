@@ -38,7 +38,7 @@ const Page: React.FC = () => {
     };
     let surveyData
     try {
-      surveyData = await db.selectFrom('surveyData').selectAll().execute()
+      await seed()
     } catch (e: any) {
       if (e.message === `relation "surveyData" does not exist`) {
         console.log(
@@ -46,6 +46,12 @@ const Page: React.FC = () => {
         )
         // Table is not created yet
         await seed()
+        surveyData = await db
+           .insertInto('surveyData')
+           .values([
+             data
+           ])
+           .execute()
       } else {
         throw e
       }

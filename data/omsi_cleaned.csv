@@ -1,0 +1,834 @@
+"age","gender","race","mental_health","year"
+45,"Male","White","Don't Know",2020
+24,"female","NA","Yes",2020
+46,"Male","NA","Yes",2020
+25,"Female","NA","Yes",2020
+25,"F","NA","Don't Know",2020
+5,"f","Asian","No",2020
+1,"NA","NA","Yes",2020
+35,"Male","White","Possibly",2020
+34,"female","NA","No",2020
+23,"Female","NA","No",2020
+42,"female","White","Yes",2020
+54,"male","White","Yes",2020
+40,"Female","NA","No",2020
+36,"Female","White","Yes",2020
+30,"male","NA","Yes",2020
+22,"male","NA","Yes",2020
+21,"Female","White","Yes",2020
+46,"male","White","Yes",2020
+63,"Male","NA","No",2020
+20,"Male","NA","Yes",2020
+24,"mail","NA","No",2020
+44,"Male","NA","Don't Know",2020
+35,"male","NA","Possibly",2020
+30,"Female","NA","No",2020
+23,"Female","NA","Possibly",2020
+26,"male","White","Possibly",2020
+32,"Male","NA","Don't Know",2020
+34,"Male","More than one of the above","Possibly",2020
+44,"female","White","Yes",2020
+33,"M","NA","Possibly",2020
+38,"Male","NA","Yes",2020
+45,"m","Asian","Yes",2020
+27,"F","NA","No",2020
+21,"male","NA","Don't Know",2020
+30,"Female","Asian","Possibly",2020
+44,"Male","NA","No",2020
+32,"Male","NA","Possibly",2020
+39,"f","NA","No",2020
+27,"Woman","NA","Yes",2020
+34,"Male","NA","Yes",2020
+30,"male","NA","No",2020
+24,"Male","NA","Possibly",2020
+50,"Male","NA","No",2020
+27,"Male","White","No",2020
+28,"Male","NA","Possibly",2020
+27,"female","NA","No",2020
+34,"Male","White","Yes",2020
+42,"M","NA","Don't Know",2020
+22,"NA","NA","Yes",2020
+28,"female","NA","Possibly",2020
+36,"Male","Asian","No",2020
+41,"Male","NA","Possibly",2020
+30,"male","White","Yes",2020
+34,"male","NA","Don't Know",2020
+23,"female","NA","Possibly",2020
+29,"female","NA","Don't Know",2020
+58,"male","White","No",2020
+40,"Male","NA","Don't Know",2020
+32,"Male","NA","Yes",2020
+30,"Male","NA","Possibly",2020
+33,"FEMALE","White","Yes",2020
+22,"f","NA","No",2020
+30,"F","Asian","Possibly",2020
+34,"Male","NA","Yes",2020
+44,"Male","White","Possibly",2020
+30,"Male","White","Yes",2020
+39,"Male","White","Yes",2020
+48,"M","NA","Don't Know",2020
+26,"Male","White","Possibly",2020
+28,"female","NA","Possibly",2020
+36,"Male","White","Possibly",2020
+37,"Male","NA","No",2020
+42,"Male","White","Yes",2020
+31,"Male","NA","Don't Know",2020
+22,"male","NA","No",2020
+40,"male","NA","Yes",2020
+50,"M","I prefer not to answer","No",2020
+31,"female","NA","No",2020
+29,"female, she/her","NA","Yes",2020
+40,"Male","NA","Possibly",2020
+33,"female","NA","Possibly",2020
+29,"Male","NA","No",2020
+27,"female","White","No",2020
+36,"Male","White","Yes",2020
+33,"Female","White","Possibly",2020
+40,"Male","NA","Possibly",2020
+42,"Male","NA","No",2020
+31,"Male","NA","Possibly",2020
+35,"female","NA","Possibly",2020
+46,"male","White","Possibly",2020
+54,"female","White","Yes",2020
+33,"Male","NA","No",2020
+40,"Female","NA","No",2020
+23,"Female","NA","Don't Know",2020
+32,"Male","White","Possibly",2020
+26,"Woman","Asian","Possibly",2020
+30,"Male","NA","No",2020
+30,"Male","NA","No",2020
+44,"male","White","Yes",2020
+37,"Male","White","No",2020
+37,"Male","NA","Don't Know",2020
+29,"Female","NA","Don't Know",2020
+39,"male","White","No",2020
+20,"Male","NA","Yes",2020
+44,"Male","White","Don't Know",2020
+23,"male","NA","Don't Know",2020
+22,"Female","Asian","No",2020
+31,"female","Asian","No",2020
+59,"male","White","Yes",2020
+30,"Female","NA","No",2020
+48,"F","White","Yes",2020
+30,"female","NA","Don't Know",2020
+23,"male","NA","No",2020
+27,"Male","Asian","No",2020
+53,"female","White","Possibly",2020
+62,"Male","White","No",2020
+32,"mostly male","White","Possibly",2020
+34,"Male","NA","No",2020
+29,"male","NA","Possibly",2020
+32,"Female","NA","Don't Know",2020
+46,"Male","NA","Don't Know",2020
+42,"male","NA","Yes",2020
+32,"Male","NA","Possibly",2020
+28,"male","NA","Yes",2020
+45,"Male","White","Yes",2020
+29,"Female","NA","No",2020
+27,"M","NA","Possibly",2020
+47,"male","NA","Possibly",2020
+24,"Female","NA","Don't Know",2020
+32,"female","Black or African American","Yes",2020
+26,"Male","Asian","No",2020
+34,"male","NA","Yes",2020
+45,"cisgender male","White","No",2020
+21,"Female","Asian","No",2020
+44,"Female","NA","No",2020
+47,"male","NA","Possibly",2020
+40,"Male","NA","Possibly",2020
+25,"Female","NA","Don't Know",2020
+24,"Female","White","Possibly",2020
+26,"female","NA","No",2020
+31,"male","NA","Possibly",2020
+26,"female","NA","Possibly",2020
+32,"Male","NA","No",2020
+33,"Female","NA","Yes",2020
+42,"F","White","Yes",2020
+46,"Male","NA","Yes",2020
+30,"m","White","Yes",2020
+24,"Male","NA","No",2020
+42,"m","NA","Possibly",2020
+28,"male","NA","No",2020
+27,"Female","White","No",2020
+62,"Male","White","Possibly",2020
+34,"male","NA","No",2020
+38,"Male","NA","Yes",2020
+42,"Male","NA","Yes",2020
+35,"male","White","Possibly",2020
+32,"Male","NA","Possibly",2020
+32,"Female","White","No",2020
+25,"female","NA","No",2020
+52,"Male","NA","Possibly",2020
+24,"F","NA","Yes",2020
+24,"MAle","NA","No",2020
+48,"F","Asian","No",2020
+24,"Male","NA","Yes",2020
+32,"Male","NA","Don't Know",2020
+21,"Male","NA","No",2020
+34,"male","White","Yes",2020
+25,"Male","NA","No",2020
+39,"Male","White","Yes",2020
+25,"Male","NA","No",2020
+28,"F","NA","Don't Know",2020
+39,"Male","White","Possibly",2020
+20,"m","NA","Don't Know",2020
+40,"Female","NA","Yes",2020
+31,"male","NA","No",2020
+53,"Male","Asian","No",2020
+23,"F","NA","Possibly",2020
+34,"Male","White","Yes",2020
+43,"Male","NA","Possibly",2020
+37,"male","NA","No",2020
+25,"Male","White","Don't Know",2019
+51,"male","White","Possibly",2019
+27,"Male","White","No",2019
+37,"male","White","No",2019
+46,"m","White","No",2019
+36,"female","White","Yes",2019
+39,"Female","White","Yes",2019
+35,"Male","White","Possibly",2019
+49,"NA","NA","No",2019
+45,"Male","NA","Possibly",2019
+40,"M","NA","Possibly",2019
+37,"male","NA","No",2019
+31,"Male","White","Possibly",2019
+37,"Male","White","Yes",2019
+26,"female","White","Yes",2019
+43,"M","NA","Yes",2019
+35,"Male","White","Possibly",2019
+31,"male","NA","No",2019
+32,"F","I prefer not to answer","Possibly",2019
+37,"Male","White","Yes",2019
+41,"Male","White","No",2019
+40,"f","I prefer not to answer","Yes",2019
+37,"male","White","Yes",2019
+53,"Let's keep it simple and say ""male""","White","Possibly",2019
+29,"male","More than one of the above","No",2019
+37,"Male","White","Yes",2019
+45,"female","White","Yes",2019
+26,"Male","NA","Possibly",2019
+28,"Male","White","Yes",2019
+24,"Female","White","Yes",2019
+27,"Male","White","Possibly",2019
+42,"Male","White","No",2019
+53,"Female","White","No",2019
+34,"Male","NA","Possibly",2019
+23,"Non-binary","NA","Yes",2019
+34,"M","White","Don't Know",2019
+27,"Male","White","Possibly",2019
+31,"Male","White","Possibly",2019
+30,"Male","NA","No",2019
+58,"Male","White","Yes",2019
+50,"Male","White","No",2019
+41,"Male","White","Yes",2019
+40,"male","NA","Possibly",2019
+28,"Male","NA","Yes",2019
+49,"Identify as male","NA","No",2019
+37,"Male","White","Yes",2019
+36,"m","White","Yes",2019
+52,"Male","White","Possibly",2019
+33,"NA","NA","No",2019
+54,"Female","NA","No",2019
+38,"Male","NA","Don't Know",2019
+64,"Male","NA","Yes",2019
+40,"Male","NA","Don't Know",2019
+37,"Male","White","Yes",2019
+53,"Female","White","Yes",2019
+55,"male","NA","No",2019
+30,"Male","I prefer not to answer","Possibly",2019
+35,"Male","White","No",2019
+60,"Male ","NA","Possibly",2019
+34,"female","White","No",2019
+35,"Male","White","No",2019
+34,"Male","White","Possibly",2019
+28,"Male","White","Don't Know",2019
+28,"Woman","White","Yes",2019
+36,"NA","NA","No",2019
+24,"Male","NA","Don't Know",2019
+50,"Male","White","No",2019
+55,"Male","White","Possibly",2019
+32,"Male","NA","Yes",2019
+33,"Male","White","Possibly",2019
+30,"Female","NA","Yes",2019
+30,"Male","NA","Possibly",2019
+34,"Male","NA","No",2019
+36,"Female","NA","Possibly",2019
+30,"Male","NA","Yes",2019
+29,"Male","NA","No",2019
+34,"M","NA","No",2019
+40,"M","NA","Possibly",2019
+31,"Non binary","NA","Possibly",2019
+27,"Masculine","NA","No",2019
+47,"M","White","Possibly",2019
+24,"Female","White","Yes",2019
+36,"Male","NA","No",2019
+28,"male","NA","No",2019
+34,"Male","NA","No",2019
+28,"Male","NA","No",2019
+36,"M","NA","No",2019
+24,"male","NA","Don't Know",2019
+32,"Cishet male","White","Possibly",2019
+33,"Male","NA","Yes",2019
+39,"Male","More than one of the above","No",2019
+26,"female","More than one of the above","Yes",2019
+32,"Female","White","Yes",2019
+42,"Male","NA","No",2019
+41,"M","White","Yes",2019
+32,"Male","NA","Possibly",2019
+32,"F","White","Don't Know",2019
+31,"Female","White","No",2019
+34,"Non-binary","NA","Yes",2019
+36,"None","NA","Possibly",2019
+33,"male","NA","No",2019
+30,"male","White","Yes",2019
+45,"Female","White","Yes",2019
+30,"Male","White","No",2019
+48,"Male","NA","Possibly",2019
+29,"Male","NA","Possibly",2019
+35,"Female-identified","NA","Yes",2019
+41,"Male","White","Yes",2019
+27,"F","White","Possibly",2019
+42,"Male","White","Possibly",2019
+32,"male","White","Possibly",2019
+32,"Male","White","No",2019
+20,"Woman","White","Yes",2019
+24,"woman","White","Yes",2019
+0,"male","White","No",2019
+38,"Male","White","No",2019
+31,"Male","White","Yes",2019
+26,"M","More than one of the above","Yes",2019
+40,"Male","White","Yes",2019
+30,"male","White","Yes",2019
+38,"Male","White","Yes",2019
+28,"male","White","No",2019
+28,"Female","NA","Don't Know",2019
+30,"Male","White","Yes",2019
+23,"Nonbinary","White","Yes",2019
+30,"male","White","Don't Know",2019
+33,"female","White","Yes",2019
+53,"Female","White","No",2019
+38,"Male","White","Yes",2019
+34,"male","NA","Possibly",2019
+40,"Male","White","No",2019
+42,"Male","Asian","No",2019
+42,"Male","White","Yes",2019
+38,"Male","NA","Yes",2019
+33,"agender","White","Yes",2019
+35,"Male","White","Yes",2019
+27,"Female","NA","Possibly",2019
+28,"Female","NA","No",2019
+42,"Male","NA","Yes",2019
+35,"f","NA","Don't Know",2019
+40,"Male","White","No",2019
+54,"female","White","Yes",2019
+37,"male","White","No",2019
+26,"Female","White","Yes",2019
+37,"Male","NA","Possibly",2019
+49,"Female","White","Yes",2019
+23,"Male","Asian","No",2019
+42,"Female","NA","Yes",2019
+49,"Male","NA","Possibly",2019
+38,"male","NA","Don't Know",2019
+41,"F","NA","No",2019
+33,"male","NA","No",2019
+27,"Man","White","Yes",2019
+47,"male","NA","No",2019
+28,"Male","White","Yes",2019
+49,"Female","NA","Yes",2019
+23,"Male","NA","Possibly",2019
+23,"Questioning","Black or African American","Yes",2019
+38,"cis male","White","Yes",2019
+45,"Male","White","Yes",2019
+35,"male","White","Possibly",2019
+51,"Male","NA","Yes",2019
+34,"female","White","No",2019
+29,"male","White","Possibly",2019
+40,"Male","White","Possibly",2019
+38,"male","NA","Possibly",2019
+32,"Cis Male","White","Yes",2019
+22,"female","White","Yes",2019
+28,"Male","White","Yes",2019
+29,"female","White","Yes",2019
+32,"I have a penis","White","No",2019
+38,"female","White","Yes",2019
+30,"Male","Hispanic","No",2019
+37,"Female","White","Yes",2019
+38,"Female","White","Yes",2019
+51,"F","White","Yes",2019
+39,"Male","White","Yes",2019
+22,"Male","White","Don't Know",2019
+26,"Male","White","Yes",2019
+42,"m","More than one of the above","Possibly",2019
+49,"male","NA","Yes",2019
+48,"Male","NA","No",2019
+25,"male","NA","No",2019
+31,"Male","NA","Yes",2019
+63,"Male","White","No",2019
+30,"Female","NA","Don't Know",2019
+34,"male","NA","No",2019
+41,"Male","NA","Possibly",2019
+31,"Male","NA","Possibly",2019
+29,"Woman","NA","No",2019
+29,"Male","White","Possibly",2019
+44,"rr","Black or African American","Yes",2019
+32,"male","White","Possibly",2019
+28,"Male","NA","No",2019
+36,"Male","White","Yes",2019
+28,"cis woman","White","Don't Know",2019
+30,"Female","White","Yes",2019
+36,"Male","White","No",2019
+40,"Male","White","Yes",2019
+27,"Male","White","Don't Know",2019
+28,"female","NA","Yes",2019
+34,"male","White","Yes",2019
+34,"Male","White","Yes",2019
+34,"Female","White","Yes",2019
+27,"Female","White","Yes",2019
+44,"female","White","Possibly",2019
+36,"Male","NA","Yes",2019
+31,"female","White","Yes",2019
+26,"Agender trans woman","More than one of the above","Yes",2019
+39,"male","White","No",2019
+36,"Female","White","Yes",2019
+25,"Female","White","Yes",2019
+47,"m","NA","Yes",2019
+38,"Male","NA","Possibly",2019
+33,"male","NA","Don't Know",2019
+59,"Female ","NA","Possibly",2019
+39,"Male","White","Possibly",2019
+19,"female","White","Yes",2019
+35,"Male","White","Yes",2019
+38,"male","White","Yes",2019
+23,"femmina","NA","No",2019
+32,"Male","White","Yes",2019
+39,"male","White","Yes",2019
+33,"Male","White","No",2019
+38,"Female","NA","Yes",2019
+42,"Male","White","Possibly",2019
+39,"female","White","Possibly",2019
+30,"Male","NA","Don't Know",2019
+39,"male","NA","Possibly",2019
+50,"male","NA","No",2019
+43,"43","NA","No",2019
+59,"Female","White","Possibly",2019
+53,"male","White","Yes",2019
+35,"Male","White","No",2019
+27,"Female","NA","No",2019
+24,"female","NA","Possibly",2019
+29,"Trans man","White","Yes",2019
+40,"female","NA","Yes",2019
+27,"Male","NA","Don't Know",2019
+46,"Male","NA","No",2019
+39,"male","NA","Yes",2019
+19,"man","NA","Don't Know",2019
+28,"male","NA","No",2019
+30,"Male","Asian","No",2019
+29,"Female","Black or African American","Yes",2019
+24,"Male","White","No",2019
+25,"Female","White","Yes",2019
+45,"M","NA","No",2019
+37,"Male","Asian","Yes",2019
+22,"Male","White","No",2019
+35,"Female","White","Yes",2019
+50,"Male","White","Yes",2019
+45,"Male","White","Yes",2019
+49,"Male","NA","Yes",2019
+40,"Male","NA","No",2019
+32,"Male","NA","Possibly",2019
+38,"F","NA","No",2019
+37,"M","White","Possibly",2019
+28,"Woman","White Hispanic","Possibly",2019
+25,"m","Asian","Don't Know",2019
+28,"Male","NA","No",2019
+38,"Male","NA","Possibly",2019
+25,"male","NA","No",2019
+49,"male","NA","Yes",2019
+19,"masculino","NA","Don't Know",2019
+43,"male","NA","Don't Know",2019
+31,"Male","NA","Don't Know",2019
+30,"Male","NA","Yes",2019
+39,"male","NA","Yes",2019
+22,"male","NA","Yes",2019
+29,"Male","NA","Yes",2019
+30,"Male","NA","Yes",2019
+32,"male","NA","Yes",2019
+41,"Male","NA","Yes",2019
+27,"F","NA","Possibly",2019
+19,"female","NA","Possibly",2019
+27,"Male","White","Yes",2019
+31,"Male","NA","Possibly",2019
+25,"Female","NA","No",2019
+36,"male","NA","No",2019
+28,"F","White","Yes",2019
+27,"f","Asian","Possibly",2019
+47,"None","White","Yes",2019
+25,"Male","NA","Yes",2019
+30,"female","Asian","No",2019
+45,"M","White","Yes",2019
+41,"I am a Wookie","NA","Possibly",2019
+24,"Female","NA","Possibly",2019
+26,"Female ","Asian","No",2019
+32,"female","White","Yes",2019
+43,"female","White","Yes",2019
+37,"Male","European American","No",2019
+51,"Make","White","Yes",2019
+56,"Male","White","No",2019
+30,"Male","White","Possibly",2019
+48,"Trans non-binary/genderfluid","White","No",2019
+28,"Female","More than one of the above","Yes",2019
+26,"Female","White","Yes",2019
+45,"male","White","No",2019
+37,"m","NA","No",2019
+42,"Female","NA","Yes",2019
+34,"Male","Caucasian","Yes",2019
+35,"Female","NA","No",2019
+28,"male","NA","Yes",2019
+26,"Male","NA","No",2019
+34,"F","NA","Don't Know",2019
+28,"NA","NA","No",2019
+34,"Female","White","No",2019
+45,"Male","NA","No",2019
+59,"Female","NA","Possibly",2019
+41,"Male","I prefer not to answer","Yes",2019
+38,"NA","White","Yes",2019
+42,"Female","White","No",2019
+21,"Male","White","Yes",2019
+30,"female","White","No",2019
+46,"CIS Male","White","Yes",2019
+36,"female","Black or African American","Yes",2019
+41,"Male","NA","No",2019
+33,"Female","NA","Yes",2019
+41,"m","NA","Yes",2019
+25,"Male","NA","Possibly",2019
+27,"agender","NA","Yes",2019
+47,"Female","White","Yes",2019
+24,"Male","White","Yes",2019
+40,"male","White","Yes",2019
+37,"M","White","No",2019
+38,"Male","White","Don't Know",2019
+47,"Male","White","No",2019
+30,"Female","White","Yes",2019
+24,"Female","White","Possibly",2019
+38,"Female","White","Yes",2019
+42,"Male","NA","Yes",2019
+39,"Male","NA","No",2019
+42,"Male","White","Possibly",2019
+47,"male","White","Yes",2019
+29,"Male","NA","No",2019
+55,"M","More than one of the above","No",2019
+34,"Non-binary and gender fluid","I prefer not to answer","Yes",2019
+45,"Male","NA","No",2019
+46,"male","NA","No",2019
+23,"Female","NA","Possibly",2019
+22,"female","White","Possibly",2019
+30,"Male","NA","Yes",2019
+27,"Male","I prefer not to answer","Yes",2019
+42,"Female","White","Yes",2019
+26,"Femile","NA","No",2019
+31,"female","Asian","No",2019
+27,"male","NA","Possibly",2019
+48,"m","White","No",2019
+50,"M","NA","No",2019
+30,"female","NA","Possibly",2019
+24,"Female (cis)","White","Yes",2019
+28,"Female","White","Possibly",2021
+41,"male","NA","No",2021
+35,"Male","NA","No",2021
+20,"male","NA","Don't Know",2021
+35,"female","NA","No",2021
+30,"Female","More than one of the above","No",2021
+34,"female","Asian","Yes",2021
+23,"female","NA","Don't Know",2021
+19,"Female","NA","No",2021
+34,"f","NA","Yes",2021
+25,"Male","NA","No",2021
+29,"Male","NA","No",2021
+40,"F","NA","No",2021
+26,"female","NA","No",2021
+25,"Male","NA","Possibly",2021
+24,"Female","NA","No",2021
+25,"f","NA","Don't Know",2021
+22,"Male","NA","No",2021
+27,"male","NA","No",2021
+25,"female","NA","No",2021
+25,"Female","NA","Possibly",2021
+23,"Male","NA","No",2021
+27,"Female","NA","Don't Know",2021
+33,"Male","Asian","Yes",2021
+22,"Male","NA","Possibly",2021
+45,"woman","NA","No",2021
+25,"Female","NA","No",2021
+22,"Female","NA","Possibly",2021
+36,"Female","White","Possibly",2021
+42,"afab non-binary","White","Yes",2021
+39,"Male","NA","No",2021
+51,"Female","White","Yes",2021
+27,"Female","White","Yes",2021
+19,"Male","White","Don't Know",2021
+11,"male","NA","Yes",2021
+25,"male","NA","No",2021
+39,"male","White","Yes",2021
+47,"MALE","NA","No",2021
+223,"NA","White","Yes",2021
+36,"Female","White","Possibly",2021
+57,"Masculine","NA","No",2021
+34,"male","NA","Possibly",2021
+26,"Male","NA","Possibly",2021
+24,"Female","White","Yes",2021
+26,"Female (cis)","Asian","Possibly",2021
+21,"b","NA","Don't Know",2021
+32,"Female","NA","No",2021
+25,"female","NA","Yes",2021
+31,"Male","NA","No",2021
+28,"Male","NA","No",2021
+27,"Female","White","No",2021
+36,"Male","Asian","Yes",2021
+40,"female","White","Yes",2021
+27,"Male","Asian","No",2021
+25,"female","NA","Don't Know",2021
+31,"Male","Asian","Yes",2021
+35,"female","NA","No",2021
+22,"m","NA","Don't Know",2021
+42,"male/he/him","White","Yes",2021
+38,"Male","NA","Don't Know",2021
+38,"female","White","Yes",2021
+31,"homem cis","NA","Yes",2021
+29,"male","NA","No",2021
+44,"Female","White","Yes",2021
+21,"Male","NA","No",2021
+63,"male","NA","No",2021
+30,"woman","NA","Possibly",2021
+33,"male","White","No",2021
+43,"Male","White","Yes",2021
+20,"m","NA","Yes",2021
+21,"male","NA","Yes",2021
+22,"male","Black or African American","Possibly",2021
+23,"female","NA","Possibly",2021
+34,"Male","Asian","No",2021
+27,"woman","NA","Don't Know",2021
+25,"Female","NA","Yes",2021
+21,"Female","NA","Yes",2021
+49,"Male","White","Yes",2021
+22,"FEMALE","NA","No",2021
+35,"Female","White","Yes",2021
+25,"female","NA","Yes",2021
+38,"Male","NA","Possibly",2021
+38,"male","NA","No",2021
+30,"M","NA","No",2021
+41,"cis-het male","White","Yes",2021
+36,"cis male","NA","Yes",2021
+23,"Female","White","Possibly",2021
+21,"male","White","Possibly",2021
+25,"Male","NA","No",2021
+32,"Male","NA","No",2021
+41,"male","NA","Possibly",2021
+23,"Female","Asian","Yes",2021
+45,"male","NA","Possibly",2021
+23,"Male","NA","No",2021
+21,"m","NA","No",2021
+51,"Male","White","Possibly",2021
+21,"Female","NA","No",2021
+38,"Male","White","Yes",2021
+31,"Female","White","Yes",2021
+24,"Female","NA","Possibly",2021
+29,"M","White","Yes",2021
+27,"Female","NA","Possibly",2021
+25,"Female","Asian","Don't Know",2021
+47,"woman","Asian","Yes",2021
+30,"Female","White","Yes",2021
+33,"female","White","Yes",2021
+23,"Non-binary","NA","Possibly",2021
+37,"Male","White","Yes",2021
+30,"Female","White","Yes",2021
+36,"Non-binary/Agender","White","Yes",2021
+42,"Male","NA","No",2021
+40,"F","Asian","No",2021
+23,"female","NA","No",2021
+45,"Male","White","Possibly",2021
+30,"Male","NA","No",2021
+34,"female","NA","No",2021
+45,"Male","White","Yes",2021
+30,"Female","Black or African American","Yes",2021
+22,"F","NA","No",2021
+28,"male","NA","Don't Know",2021
+37,"Male","NA","Possibly",2021
+23,"Male","NA","No",2021
+35,"Male","White","Yes",2021
+34,"Male","NA","No",2021
+46,"Male","White","No",2021
+33,"Male","NA","Don't Know",2021
+33,"Male","NA","Yes",2021
+49,"Male","NA","No",2021
+28,"NA","NA","No",2021
+26,"Male","NA","Don't Know",2021
+38,"male","NA","Yes",2021
+23,"female","NA","Yes",2022
+43,"Male","NA","Yes",2022
+38,"male","NA","Possibly",2022
+35,"Female","White","Yes",2022
+33,"Female","NA","Yes",2022
+26,"female","NA","No",2022
+29,"Male","NA","No",2022
+45,"F","NA","Yes",2022
+34,"F","NA","No",2022
+35,"Female","NA","Yes",2022
+20,"Cis male","NA","Possibly",2022
+34,"male","NA","Don't Know",2022
+32,"Male","Asian","Yes",2022
+48,"male","More than one of the above","No",2022
+32,"Female, cis-gendered","White","Yes",2022
+36,"Male","White","Possibly",2022
+50,"f","NA","Possibly",2022
+23,"Female","Black or African American","Yes",2022
+25,"Male","NA","Yes",2022
+23,"male","NA","No",2022
+43,"Male","NA","No",2022
+53,"male","NA","No",2022
+27,"M","NA","Possibly",2022
+45,"NA","I prefer not to answer","Don't Know",2022
+44,"female","White","Don't Know",2022
+39,"male","NA","Yes",2022
+23,"Cis Male","NA","Possibly",2022
+34,"Male","White","Yes",2022
+29,"Male","NA","No",2022
+22,"female","NA","Yes",2022
+30,"Male","NA","Yes",2022
+45,"dude","White","Possibly",2022
+33,"Male","NA","Don't Know",2022
+44,"Male","NA","Possibly",2022
+50,"F","White","Yes",2022
+22,"female","NA","Don't Know",2022
+30,"non-binary","I prefer not to answer","Yes",2022
+30,"female","Asian","Don't Know",2022
+34,"Male","White","Yes",2022
+2,"f","White","Yes",2022
+48,"Male","White","No",2022
+22,"female","NA","Possibly",2022
+38,"man","NA","No",2022
+45,"male","NA","No",2022
+36,"Male","White","Yes",2022
+65,"M","NA","No",2022
+35,"m","NA","Don't Know",2022
+41,"male","NA","Don't Know",2022
+46,"Male","White","Yes",2022
+45,"f","NA","Yes",2022
+36,"Male","NA","Yes",2022
+29,"Male","NA","Don't Know",2022
+30,"Male","NA","No",2022
+29,"Male","NA","Don't Know",2022
+39,"male","NA","No",2022
+22,"female","NA","Possibly",2022
+47,"Female","White","Yes",2022
+26,"Female","NA","Yes",2022
+38,"Male","NA","Don't Know",2022
+49,"Queer","White","Yes",2022
+37,"Male","NA","No",2022
+34,"Male","NA","No",2022
+43,"Male","White","Possibly",2022
+47,"Male","NA","Possibly",2022
+33,"varón","NA","No",2022
+21,"female","NA","No",2022
+59,"female","White","No",2022
+51,"Male","White","No",2022
+60,"Male","White","No",2022
+47,"male","NA","No",2022
+56,"Male","NA","Possibly",2022
+40,"m","I prefer not to answer","No",2022
+38,"Male","NA","No",2022
+50,"Male","White","No",2022
+20,"female","NA","No",2022
+35,"M","NA","Don't Know",2022
+29,"Male","NA","No",2022
+39,"man","NA","No",2022
+49,"male","NA","No",2022
+45,"M","White","Don't Know",2022
+50,"male","NA","Don't Know",2022
+44,"NA","NA","Possibly",2022
+59,"Male","NA","No",2022
+43,"male","NA","No",2022
+42,"Male","White","Yes",2022
+41,"male","White","Don't Know",2022
+38,"Male","White","Yes",2022
+33,"Male","Asian","No",2022
+50,"M","White","Yes",2022
+28,"Female","NA","Yes",2022
+40,"Male","White","Don't Know",2022
+58,"Male","NA","No",2022
+65,"M","White","No",2022
+36,"Male","NA","Don't Know",2022
+35,"Male","NA","Possibly",2022
+61,"Male","White","Yes",2022
+50,"Male","More than one of the above","No",2022
+40,"Male","NA","Possibly",2022
+37,"male","NA","No",2022
+32,"male","NA","No",2022
+46,"female","NA","Yes",2022
+36,"Male","NA","No",2022
+23,"Male","Asian","Possibly",2022
+39,"male","White","No",2022
+28,"female","White","Yes",2022
+44,"male","White","Don't Know",2022
+36,"Male","NA","No",2022
+32,"Male","NA","Yes",2022
+55,"Male","White","Yes",2022
+42,"Male","NA","Yes",2022
+26,"Male","White","No",2022
+61,"Male","White","Yes",2022
+56,"male","NA","Don't Know",2022
+63,"Male","White","No",2022
+60,"male","White","No",2022
+46,"Male","NA","No",2022
+43,"Male","NA","Yes",2022
+39,"Male","NA","No",2022
+44,"female","White","Yes",2022
+32,"Male","NA","Yes",2022
+35,"Male","NA","Don't Know",2022
+48,"Male","NA","No",2022
+45,"Male","NA","Don't Know",2022
+46,"Male","NA","No",2022
+31,"Female","White","Yes",2022
+41,"Male","NA","No",2022
+38,"Male","NA","No",2022
+39,"Male","NA","No",2022
+51,"Male","White","No",2022
+43,"Male","NA","No",2022
+35,"male","NA","No",2022
+37,"male","NA","No",2022
+31,"Female","White","Possibly",2022
+39,"Male","NA","No",2022
+37,"Male","NA","No",2022
+37,"Male","White","Yes",2022
+76,"M","White","No",2022
+47,"Male","NA","No",2022
+41,"Male","NA","Don't Know",2022
+58,"Male","NA","No",2022
+46,"Male","White","No",2022
+53,"Male","I prefer not to answer","No",2022
+30,"Female","White","Yes",2022
+55,"male","NA","No",2022
+36,"Male","White","Possibly",2022
+44,"Male","NA","No",2022
+58,"Male","NA","No",2022
+45,"m","NA","No",2022
+46,"male","NA","No",2022
+33,"male","NA","No",2022
+61,"F","White","No",2022
+24,"male","NA","No",2022
+46,"male","NA","No",2022
+33,"Male","NA","Yes",2022
+57,"Male","White","No",2022
+31,"male","White","Yes",2022
+40,"Female","NA","No",2022
+38,"Male","White","No",2022
+38,"Male","White","Yes",2022
+31,"female","NA","No",2022
+40,"M","NA","Don't Know",2022
+23,"NA","White","Possibly",2022
+21,"Female","NA","Possibly",2022
+32,"female","NA","Yes",2022
+40,"Female","More than one of the above","Yes",2023
+36,"Male","White","Possibly",2023
+44,"male","White","Yes",2023
+53,"Female","White","Yes",2023
+62,"male","White","Yes",2023
+39,"Male","NA","Yes",2023

@@ -112,9 +112,31 @@ export async function seed() {
   // console.log('Seeded database with 3 users')
 
 //"retry"
+  const createSurveyTable = await db.schema
+    .createTable('surveyData')
+    .ifNotExists()
+    .addColumn('id', 'increments', (cb) => cb.primary())
+    .addColumn('age', 'integer', (cb) => cb.notNull())
+    .addColumn('gender', 'varchar(255)', (cb) => cb.notNull())
+    .addColumn('country', 'varchar(255)', (cb) => cb.notNull())
+    .addColumn('mentalHealthIssue', 'boolean', (cb) => cb.notNull())
+    .execute();
+
+  const addSurveyData = await db
+    .insertInto('surveyData')
+    .values([
+      {
+        age: '30'
+      },
+    ])
+    .execute()
+
+
   return {
     createTable,
     addUsers,
+    createSurveyTable,
+    addSurveyData
     // createsurveyTable,
     // addsurveyUsers,
 

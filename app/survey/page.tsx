@@ -1,6 +1,7 @@
 'use client'
 
-import { writeSurveyResults } from '@/lib/data';
+import { db } from '@/lib/kysely'
+import { seed } from '@/lib/seed'
 import React, { useState } from 'react';
 
 const Page: React.FC = () => {
@@ -35,7 +36,28 @@ const Page: React.FC = () => {
       country,
       mentalHealthIssues,
     };
-    writeSurveyResults(data);
+    let surveyData
+    try {
+      surveyData = await db.selectFrom('surveyData').selectAll().execute()
+    } catch (e: any) {
+      if (e.message === `relation "surveyData" does not exist`) {
+        console.log(
+          'Table does not exist, creating and seeding it with dummy data now...'
+        )
+        // Table is not created yet
+        await seed()
+        surveyData = await db
+          .insertInto('surveyData')
+          .values([
+            data
+          ])
+          .execute()
+
+        
+      } else {
+        throw e
+      }
+    }
   };
 
   return (

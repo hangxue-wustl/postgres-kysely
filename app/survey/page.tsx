@@ -131,12 +131,13 @@ const Page: React.FC = () => {
           transition: 'background-color 0.3s ease', // Smooth transition for color change
         }}
         // Add hover style
-        onMouseOver={(e) => e.target.style.backgroundColor = '#45a049'}
+        onMouseOver={(e) => (e.target as HTMLElement).style.backgroundColor = '#45a049'}
         // Reset to original color when mouse leaves button
-        onMouseOut={(e) => e.target.style.backgroundColor = '#4CAF50'}
+        onMouseOut={(e) => (e.target as HTMLElement).style.backgroundColor = '#4CAF50'}
       >
         Submit
       </button>
+
 
 
     </div>

@@ -4,6 +4,7 @@ import TablePlaceholder from '@/components/table-placeholder'
 import ExpandingArrow from '@/components/expanding-arrow'
 import { Suspense } from 'react'
 import SurveyChart from '@/components/survey-chart';
+import GenderChart from '@/components/gender-chart';
 
 export const preferredRegion = 'home'
 export const dynamic = 'force-dynamic'
@@ -28,6 +29,7 @@ export default function Page() {
       </p>
       <Suspense fallback={<TablePlaceholder />}>
         <SurveyChart />
+        <GenderChart />
       </Suspense>
     </div>
 )

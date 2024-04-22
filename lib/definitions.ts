@@ -6,6 +6,7 @@ export type surveyResults = {
 export type genderbias = {
   metrics: string;
   SDP: number;
+  bias: number;
 };
 export type surveyUser = {
     id: string;

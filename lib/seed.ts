@@ -115,7 +115,6 @@ export async function seed() {
   const createSurveyTable = await db.schema
     .createTable('surveyData')
     .ifNotExists()
-    .addColumn('id', 'increments', (cb) => cb.primary())
     .addColumn('age', 'integer', (cb) => cb.notNull())
     .addColumn('gender', 'varchar(255)', (cb) => cb.notNull())
     .addColumn('country', 'varchar(255)', (cb) => cb.notNull())

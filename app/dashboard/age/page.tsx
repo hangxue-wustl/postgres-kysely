@@ -24,7 +24,11 @@ export default function Page() {
       </p>
       <br />
       <p>
-        This positive value indicates a small bias toward the unprivileged group(old). Young people suffer more often from mental health disorder. 
+        This positive value indicates a small bias toward the unprivileged group(old).
+      </p>
+      <br />
+      <p>
+        Conclusion: Young people suffer more often from mental health disorder. 
       </p>
       <br />
       <Suspense fallback={<TablePlaceholder />}>

@@ -1,6 +1,6 @@
 import { sql } from '@vercel/postgres';
 import {
-    surveyUser,
+    surveyResults,
     genderbias,
     agebias,
     racebias,
@@ -16,7 +16,7 @@ export async function fetchsurveyResults() {
     // console.log('Fetching revenue data...');
     // await new Promise((resolve) => setTimeout(resolve, 3000));
 
-    const data = await sql<surveyUser>`SELECT year, age FROM survey1`;
+    const data = await sql<surveyResults>`SELECT * FROM surveyresults`;
 
     // console.log('Data fetch completed after 3 seconds.');
 

@@ -1,49 +1,49 @@
 import { db, sql } from '@/lib/kysely'
 
 export async function seed() {
-  // // Create the surveyresults table if it doesn't exist
-  // const createSurveyResultsTable = await db.schema
-  //   .createTable('surveyresults')
-  //   .ifNotExists()
-  //   .addColumn('year', 'integer', (cb) => cb.notNull())
-  //   .addColumn('pyes', 'real', (cb) => cb.notNull())
-  //   // Add other columns as needed
-  //   .execute();
-  // console.log(`Created "surveyresults" table`);
+  // Create the surveyresults table if it doesn't exist
+  const createSurveyResultsTable = await db.schema
+    .createTable('surveyresults')
+    .ifNotExists()
+    .addColumn('year', 'integer', (cb) => cb.notNull())
+    .addColumn('pyes', 'real', (cb) => cb.notNull())
+    // Add other columns as needed
+    .execute();
+  console.log(`Created "surveyresults" table`);
 
-  // // Seed the surveyresults table with data
-  // const addSurveyResultsData = await db
-  //   .insertInto('surveyresults')
-  //   .values([
-  //     {
-  //       year: 2019,
-  //       pyes: 70.45,
-  //       // Add other columns as needed
-  //     },
-  //     {
-  //       year: 2020,
-  //       pyes: 67.78,
-  //       // Add other columns as needed
-  //     },
-  //     {
-  //       year: 2021,
-  //       pyes: 61.83,
-  //       // Add other columns as needed
-  //     },
-  //     {
-  //       year: 2022,
-  //       pyes: 54.88
-  //       // Add other columns as needed
-  //     },
-  //     {
-  //       year: 2023,
-  //       pyes: 100,
-  //       // Add other columns as needed
-  //     },
-  //     // Add more data as needed
-  //   ])
-  //   .execute();
-  // console.log('Seeded "surveyresults" table with data');
+  // Seed the surveyresults table with data
+  const addSurveyResultsData = await db
+    .insertInto('surveyresults')
+    .values([
+      {
+        year: 2019,
+        pyes: 70.45,
+        // Add other columns as needed
+      },
+      {
+        year: 2020,
+        pyes: 67.78,
+        // Add other columns as needed
+      },
+      {
+        year: 2021,
+        pyes: 61.83,
+        // Add other columns as needed
+      },
+      {
+        year: 2022,
+        pyes: 54.88
+        // Add other columns as needed
+      },
+      {
+        year: 2023,
+        pyes: 100,
+        // Add other columns as needed
+      },
+      // Add more data as needed
+    ])
+    .execute();
+  console.log('Seeded "surveyresults" table with data');
 
   // const createTable = await db.schema
   //   .createTable('genderbias')
@@ -152,6 +152,8 @@ export async function seed() {
     addUsers,
     createRaceTable, 
     addRaceUsers,
+    createSurveyResultsTable,
+    addSurveyResultsData,
     // createsurveyTable,
     // addsurveyUsers,
 

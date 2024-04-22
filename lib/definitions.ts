@@ -1,6 +1,6 @@
 export type surveyResults = {
     year: number;
-    age: number;
+    pyes: number;
   };
 
 export type genderbias = {

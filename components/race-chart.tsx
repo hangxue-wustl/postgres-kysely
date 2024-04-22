@@ -27,7 +27,7 @@ export default async function RaceChart() {
 
     const raceResults = await fetchRaceResults();
     const chartHeight = 350;
-    const yAxisLabels = [-1, -0.75, -5, -0.25, 0];
+    const yAxisLabels = [1, 0.75, 5, 0.25, 0];
     const topLabel = 1;
   
     if (!raceResults || raceResults.length === 0) {

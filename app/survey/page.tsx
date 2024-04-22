@@ -47,11 +47,6 @@ const Page: React.FC = () => {
         // Table is not created yet
         await seed()
         surveyData = await db
-           .insertInto('surveyData')
-           .values([
-             data
-           ])
-           .execute()
       } else {
         throw e
       }

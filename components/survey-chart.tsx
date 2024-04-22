@@ -43,9 +43,9 @@ export default async function SurveyChart() {
   return (
     // <div className="w-full md:col-span-4">
     <div className="w-full md:w-auto md:col-span-4 mx-auto">
-
+      
       <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
-        Recent Survey Results: Proportions of Users Reporting Mental Health Disorders
+        Recent Survey Results: Percentage of Users Reporting Mental Health Disorders
       </h2>
       <div className="rounded-xl bg-gray-50 p-4">
         <div className="mt-0 grid grid-cols-12 items-end gap-2 rounded-md bg-white p-4 sm:grid-cols-13 md:gap-4">

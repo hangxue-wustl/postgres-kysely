@@ -26,6 +26,7 @@ export default function Page() {
       <p>
         This positive value indicates a small bias toward the unprivileged group(old). Young people suffer more often from mental health disorder. 
       </p>
+      <br />
       <Suspense fallback={<TablePlaceholder />}>
         <AgeChart />
       </Suspense>

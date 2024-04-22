@@ -22,12 +22,17 @@ export default function Page() {
       </p>
       <br />
       <p>
-        Statistical Parity Difference (SPD) = 0,21
+        Statistical Parity Difference (SPD) = 0.21
       </p>
       <br />
       <p>
-        This positve value indicates a small bias for the unprivileged (non-white). White people suffer more often from mental health disorder. 
+        This positve value indicates a small bias towards the unprivileged (non-white). 
       </p>
+      <br />
+      <p>
+        Conclusion: White people suffer more often from mental health disorder. 
+      </p>
+      <br />
       <Suspense fallback={<TablePlaceholder />}>
         <RaceChart />
       </Suspense>

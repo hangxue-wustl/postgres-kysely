@@ -27,8 +27,13 @@ export default function Page() {
       </p>
       <br />
       <p>
-        This negative value indicates a small bias against the unprivileged (female). Females suffer more often from mental health disorder. 
+        This negative value indicates a small bias against the unprivileged (female).
       </p>
+      <br />
+      <p>
+        Conclusion: Females suffer more often from mental health disorder. 
+      </p>
+      <br />
       <Suspense fallback={<TablePlaceholder />}>
         <GenderChart />
       </Suspense>

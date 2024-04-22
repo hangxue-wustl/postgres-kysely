@@ -5,6 +5,7 @@ import { lusitana } from '@/app/ui/fonts';
 import { fetchAgeResults } from '@/lib/data';
 import { seed } from '@/lib/seed'
 
+// retry
 export default async function AgeChart() {
     let agebias
     let startTime = Date.now()

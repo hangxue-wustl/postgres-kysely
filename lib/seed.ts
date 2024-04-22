@@ -1,9 +1,6 @@
 import { db, sql } from '@/lib/kysely'
 
 export async function seed() {
-  
-
-
   // // Create the surveyresults table if it doesn't exist
   // const createSurveyResultsTable = await db.schema
   //   .createTable('surveyresults')
@@ -48,22 +45,60 @@ export async function seed() {
   //   .execute();
   // console.log('Seeded "surveyresults" table with data');
 
-//repeat
+  // const createTable = await db.schema
+  //   .createTable('genderbias')
+  //   .ifNotExists()
+  //   .addColumn('metrics', 'varchar(255)', (cb) => cb.primaryKey())
+  //   .addColumn('bias', 'real', (cb) => cb.notNull())
+  //   .execute()
+  // console.log(`Created "genderbias" table`)
+
+  // const addUsers = await db
+  //   .insertInto('genderbias')
+  //   .values([
+  //     {
+  //       metrics: 'SDP',
+  //       bias: -0.127,
+  //     },
+
+  //   ])
+  //   .execute()
+  // console.log('Seeded database with SDP')
 
   const createTable = await db.schema
-    .createTable('genderbias')
-    .ifNotExists()
-    .addColumn('metrics', 'varchar(255)', (cb) => cb.primaryKey())
-    .addColumn('bias', 'real', (cb) => cb.notNull())
-    .execute()
-  console.log(`Created "genderbias" table`)
+  .createTable('agebias')
+  .ifNotExists()
+  .addColumn('metrics', 'varchar(255)', (cb) => cb.primaryKey())
+  .addColumn('bias', 'real', (cb) => cb.notNull())
+  .execute()
+  console.log(`Created "agebias" table`)
 
   const addUsers = await db
-    .insertInto('genderbias')
+    .insertInto('agebias')
     .values([
       {
         metrics: 'SDP',
-        bias: -0.127,
+        bias: 0.11,
+      },
+
+    ])
+    .execute()
+  console.log('Seeded database with SDP')
+
+  const createRaceTable = await db.schema
+  .createTable('racebias')
+  .ifNotExists()
+  .addColumn('metrics', 'varchar(255)', (cb) => cb.primaryKey())
+  .addColumn('bias', 'real', (cb) => cb.notNull())
+  .execute()
+  console.log(`Created "racebias" table`)
+
+  const addRaceUsers = await db
+    .insertInto('racebias')
+    .values([
+      {
+        metrics: 'SDP',
+        bias: 0.21,
       },
 
     ])
@@ -115,6 +150,8 @@ export async function seed() {
   return {
     createTable,
     addUsers,
+    createRaceTable, 
+    addRaceUsers,
     // createsurveyTable,
     // addsurveyUsers,
 

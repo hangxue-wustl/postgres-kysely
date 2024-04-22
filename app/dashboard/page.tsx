@@ -28,7 +28,7 @@ export default function Page() {
       </p>
       <br />
       <p>
-        Click the category (Age, Gender and Nationality) in the side bar for bias analysis.
+        Click the category (Age, Gender and Race) in the side bar for bias analysis.
       </p>
     </div>
 )

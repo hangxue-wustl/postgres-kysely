@@ -7,6 +7,17 @@ export type genderbias = {
   metrics: string;
   bias: number;
 };
+
+export type racebias = {
+  metrics: string;
+  bias: number;
+};
+
+export type agebias = {
+  metrics: string;
+  bias: number;
+};
+
 export type surveyUser = {
     id: string;
     year: number;

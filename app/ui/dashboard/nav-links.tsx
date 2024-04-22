@@ -20,7 +20,7 @@ const links = [
     icon: DocumentDuplicateIcon,
   },
   { name: 'Gender', href: '/dashboard/gender', icon: DocumentDuplicateIcon },
-  { name: 'Nationality', href: '/dashboard/nationality', icon: DocumentDuplicateIcon },
+  { name: 'Race', href: '/dashboard/race', icon: DocumentDuplicateIcon },
 ];
 
 export default function NavLinks() {

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import TablePlaceholder from '@/components/table-placeholder'
 import ExpandingArrow from '@/components/expanding-arrow'
 import { Suspense } from 'react'
-import GenderChart from '@/components/gender-chart';
+import AgeChart from '@/components/age-chart';
 
 export const preferredRegion = 'home'
 export const dynamic = 'force-dynamic'
@@ -13,21 +13,21 @@ export default function Page() {
     <div>
       <h2 className="text-xl font-semibold">Age bias analysis</h2>
       <p>
-        Male(privileged): 200 out of 517 answered currently does not have a mental health disorder
+        Young(younger than 35, privileged): 147 out of 455 answered currently does not have a mental health disorder
       </p>
       <p>
-        Female(unprivileged): 65 out of 234 answered currently does not have a mental health disorder
-      </p>
-      <br />
-      <p>
-        Statistical Parity Difference (SPD) = -0.128
+        Old(older than 35, unprivileged): 139 out of 378 answered currently does not have a mental health disorder
       </p>
       <br />
       <p>
-        This negative value indicates a small bias against the unprivileged (female). Females suffer more often from mental health disorder. 
+        Statistical Parity Difference (SPD) = 0.11
+      </p>
+      <br />
+      <p>
+        This positive value indicates a small bias toward the unprivileged group(old). Young people suffer more often from mental health disorder. 
       </p>
       <Suspense fallback={<TablePlaceholder />}>
-        <GenderChart />
+        <AgeChart />
       </Suspense>
     </div>
 )

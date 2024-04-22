@@ -36,7 +36,6 @@ const Page: React.FC = () => {
       country,
       mentalHealthIssues,
     };
-    let surveyData
     try {
       await seed()
     } catch (e: any) {
@@ -46,7 +45,6 @@ const Page: React.FC = () => {
         )
         // Table is not created yet
         await seed()
-        surveyData = await db
       } else {
         throw e
       }

@@ -121,21 +121,12 @@ export async function seed() {
     .addColumn('mentalHealthIssue', 'boolean', (cb) => cb.notNull())
     .execute();
 
-  const addSurveyData = await db
-    .insertInto('surveyData')
-    .values([
-      {
-        age: '30'
-      },
-    ])
-    .execute()
 
 
   return {
     createTable,
     addUsers,
     createSurveyTable,
-    addSurveyData
     // createsurveyTable,
     // addsurveyUsers,
 

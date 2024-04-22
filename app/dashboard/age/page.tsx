@@ -7,7 +7,7 @@ import AgeChart from '@/components/age-chart';
 
 export const preferredRegion = 'home'
 export const dynamic = 'force-dynamic'
-
+//"retry"
 export default function Page() {
   return (
     <div>

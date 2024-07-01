@@ -1,3 +1,12 @@
+#  Project summary
+This project creates a web app that allows users to observe the trend of mental health issues within the tech community over the recent years (2019-2023) and identify any potential biases (such as gender, age, race).
+
+# Technical part
+Frontend - Next.js
+Database - Postgre
+Backend - TypeScript
+Deployment options - Vercel
+
 # Introduction
 In recent years, there has been a growing recognition of the importance of mental health, particularly within the fast-paced and demanding environment of the technology sector. The tech industry, known for its innovation and progress, also faces unique challenges that can impact the mental well-being of its workforce. Long hours, high-pressure deadlines, and a culture that often glorifies overwork can contribute to stress, anxiety, and burnout among tech professionals. Additionally, issues such as imposter syndrome, isolation, and discrimination can further exacerbate mental health concerns within the tech community.
 

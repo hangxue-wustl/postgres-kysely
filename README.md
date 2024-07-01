@@ -1,57 +1,21 @@
----
-name: Vercel Postgres + Kysely Next.js Starter
-slug: postgres-kysely
-description: Simple Next.js template that uses Vercel Postgres as the database and Kysely as the query builder.
-framework: Next.js
-useCase: Starter
-css: Tailwind
-database: Vercel Postgres
-deployUrl: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fstorage%2Fpostgres-kysely&project-name=postgres-kysely&repository-name=postgres-kysely&demo-title=Vercel%20Postgres%20%2B%20Kysely%20Next.js%20Starter&demo-description=Simple%20Next.js%20template%20that%20uses%20Vercel%20Postgres%20as%20the%20database%20and%20Kysely%20as%20the%20ORM.&demo-url=https%3A%2F%2Fpostgres-kysely.vercel.app%2F&demo-image=https%3A%2F%2Fpostgres-kysely.vercel.app%2Fopengraph-image.png&stores=%5B%7B"type"%3A"postgres"%7D%5D
-demoUrl: https://postgres-kysely.vercel.app/
-relatedTemplates:
-  - postgres-starter
-  - postgres-prisma
-  - postgres-sveltekit
----
+# Introduction
+In recent years, there has been a growing recognition of the importance of mental health, particularly within the fast-paced and demanding environment of the technology sector. The tech industry, known for its innovation and progress, also faces unique challenges that can impact the mental well-being of its workforce. Long hours, high-pressure deadlines, and a culture that often glorifies overwork can contribute to stress, anxiety, and burnout among tech professionals. Additionally, issues such as imposter syndrome, isolation, and discrimination can further exacerbate mental health concerns within the tech community.
 
-# Vercel Postgres + Kysely Next.js Starter
+Raising awareness of mental health issues within the tech community and identifying any potential biases (such as gender, age, nationality) regarding these issues are essential steps towards fostering a more supportive and inclusive environment. Utilizing data collected over time, we can observe how the prevalence of these issues and the biases relating to them change, allowing us to tailor interventions and support mechanisms accordingly.
 
-Simple Next.js template that uses [Vercel Postgres](https://vercel.com/postgres) as the database and [Kysely](https://kysely.dev/) as the query builder.
 
-## Demo
+# Deployment of the application. 
+The web app is deployed using Vercel. Please click the following link for the deployment of the app. 
+* https://postgres-kysely-q1by-67nf5135f-hxue43s-projects.vercel.app/
 
-https://postgres-kysely.vercel.app/
+# Basic user instructions
 
-## How to Use
+* When you click on the link above, you will see the home page of the web app.
+* There is a clickable link "Take your mental health survey here!" above the title "Mental Health Trend in Tech Community". You can click the link and it will take you to the user survey of mental health problems.
+* There is a clickable link "Click here for more detailed analysis of the survey results!" below the bar chart. You can click the link and it will take you to the fairness analysis of the survey results.
 
-You can choose from one of the following two methods to use this repository:
+# Datasets
 
-### One-Click Deploy
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fstorage%2Fpostgres-kysely&project-name=postgres-kysely&repository-name=postgres-kysely&demo-title=Vercel%20Postgres%20%2B%20Kysely%20Next.js%20Starter&demo-description=Simple%20Next.js%20template%20that%20uses%20Vercel%20Postgres%20as%20the%20database%20and%20Kysely%20as%20the%20ORM.&demo-url=https%3A%2F%2Fpostgres-kysely.vercel.app%2F&demo-image=https%3A%2F%2Fpostgres-kysely.vercel.app%2Fopengraph-image.png&stores=%5B%7B"type"%3A"postgres"%7D%5D)
-
-### Clone and Deploy
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
-
-```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/storage/postgres-kysely
-```
-
-Once that's done, copy the .env.example file in this directory to .env.local (which will be ignored by Git):
-
-```bash
-cp .env.example .env.local
-```
-
-Then open `.env.local` and set the environment variables to match the ones in your Vercel Storage Dashboard.
-
-Next, run Next.js in development mode:
-
-```bash
-pnpm dev
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples) ([Documentation](https://nextjs.org/docs/deployment)).
+Datasets of (2019-2023) survey results of mental health in tech are downloaded from https://osmhhelp.org/research.html.
+Datasets are cleaned following https://github.gatech.edu/jyuan316/cs6440/blob/main/data/omsi_clean.R. 
+The resulting file https://github.gatech.edu/jyuan316/cs6440/blob/main/data/omsi_cleaned.csv is used for downstream analysis. 
